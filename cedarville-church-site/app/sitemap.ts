@@ -1,6 +1,8 @@
 import type { MetadataRoute } from "next";
 
-const baseUrl = "https://cedarvillenazarene.org";
+export const dynamic = "force-static";
+
+const baseUrl = "https://www.cedarvillenaz.org";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [

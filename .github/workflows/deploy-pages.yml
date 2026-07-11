@@ -29,6 +29,7 @@ jobs:
           cache-dependency-path: cedarville-church-site/package-lock.json
       - run: npm ci
       - run: npm run build
+      - run: mkdir -p out
       - run: echo "www.cedarvillenaz.org" > out/CNAME
       - uses: actions/upload-pages-artifact@v3
         with:

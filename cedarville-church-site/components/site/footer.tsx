@@ -1,13 +1,20 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Instagram, Youtube } from "lucide-react";
 
 import { churchInfo, navLinks, socialLinks } from "@/lib/site-data";
 
 const icons = {
-  Instagram,
-  YouTube: Youtube,
-};
+  Instagram: (
+    <svg aria-hidden="true" viewBox="0 0 24 24" className="h-4 w-4" fill="currentColor">
+      <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.8A3.95 3.95 0 0 0 3.8 7.75v8.5a3.95 3.95 0 0 0 3.95 3.95h8.5a3.95 3.95 0 0 0 3.95-3.95v-8.5a3.95 3.95 0 0 0-3.95-3.95h-8.5Zm9.2 1.35a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.8a3.2 3.2 0 1 0 0 6.4 3.2 3.2 0 0 0 0-6.4Z" />
+    </svg>
+  ),
+  YouTube: (
+    <svg aria-hidden="true" viewBox="0 0 24 24" className="h-4 w-4" fill="currentColor">
+      <path d="M23.5 7.2a3 3 0 0 0-2.1-2.1C19.5 4.5 12 4.5 12 4.5s-7.5 0-9.4.6A3 3 0 0 0 .5 7.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 4.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-4.8ZM9.6 15.1V8.9l5.8 3.1-5.8 3.1Z" />
+    </svg>
+  ),
+} as const;
 
 export function Footer() {
   return (
@@ -94,7 +101,7 @@ export function Footer() {
                   aria-label={social.label}
                   className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-primary-foreground/30 transition-colors hover:border-accent hover:text-accent"
                 >
-                  <Icon className="h-4 w-4" />
+                  {Icon}
                 </a>
               );
             })}

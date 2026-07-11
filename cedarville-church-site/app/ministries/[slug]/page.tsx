@@ -10,12 +10,17 @@ type Params = {
   slug: string;
 };
 
+type PageProps = {
+  params: Promise<Params>;
+};
+
 export function generateStaticParams() {
   return ministries.map((ministry) => ({ slug: ministry.slug }));
 }
 
-export function generateMetadata({ params }: { params: Params }): Metadata {
-  const ministry = ministries.find((item) => item.slug === params.slug);
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const ministry = ministries.find((item) => item.slug === slug);
 
   if (!ministry) {
     return { title: "Ministry" };
@@ -27,8 +32,9 @@ export function generateMetadata({ params }: { params: Params }): Metadata {
   };
 }
 
-export default function MinistryDetailPage({ params }: { params: Params }) {
-  const ministry = ministries.find((item) => item.slug === params.slug);
+export default async function MinistryDetailPage({ params }: PageProps) {
+  const { slug } = await params;
+  const ministry = ministries.find((item) => item.slug === slug);
   if (!ministry) {
     notFound();
   }

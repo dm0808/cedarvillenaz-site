@@ -179,6 +179,7 @@ export const monthlyCalendar = [
 
 export const socialLinks = [
   { label: "Facebook", href: "https://www.facebook.com/cedarnaz" },
+  { label: "Instagram", href: "https://www.instagram.com/cedarville.naz/" },
   { label: "YouTube", href: "https://www.youtube.com/@CedarvilleChurchofNazarene" },
 ] as const;
 

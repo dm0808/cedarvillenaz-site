@@ -113,7 +113,7 @@ export const ministries = [
   },
   {
     slug: "men-on-mission",
-    title: "Men on Mission",
+    title: "Men of Faith",
     description:
       "Men growing in Christ through Bible study, brotherhood, practical service, and faithful leadership at home, church, and in the community.",
     icon: Compass,
@@ -232,7 +232,7 @@ export const ministryPageCopy: Record<string, { summary: string; details: string
   },
   "men-on-mission": {
     summary:
-      "Men on Mission calls men to follow Jesus with courage, integrity, and a servant heart in every season of life.",
+      "Men of Faith calls men to follow Jesus with courage, integrity, and a servant heart in every season of life.",
     details: [
       "Bible study and honest conversation",
       "Hands-on service projects for church and community",

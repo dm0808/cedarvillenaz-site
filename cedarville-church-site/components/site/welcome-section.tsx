@@ -27,7 +27,7 @@ export function WelcomeSection() {
         <MotionReveal>
           <div className="relative aspect-[4/3] overflow-hidden rounded-3xl">
             <Image
-              src="/images/welcome-section.png.png"
+              src="/images/welcome-section.png"
               alt="Warm welcome at church gathering"
               fill
               className="object-cover"

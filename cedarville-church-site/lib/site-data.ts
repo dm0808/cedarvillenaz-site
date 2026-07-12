@@ -183,7 +183,16 @@ export const socialLinks = [
   { label: "YouTube", href: "https://www.youtube.com/@CedarvilleChurchofNazarene" },
 ] as const;
 
-export const ministryPageCopy: Record<string, { summary: string; details: string[] }> = {
+export const ministryPageCopy: Record<
+  string,
+  {
+    summary: string;
+    details: string[];
+    galleryTitle?: string;
+    galleryDescription?: string;
+    galleryImages?: { src: string; alt: string }[];
+  }
+> = {
   "kids-ministry": {
     summary:
       "Our Kids Ministry partners with families to help children discover who Jesus is in age-appropriate and joyful ways.",
@@ -200,6 +209,15 @@ export const ministryPageCopy: Record<string, { summary: string; details: string
       "Weekly gatherings for worship and discussion",
       "Mentorship from trusted adult leaders",
       "Service projects and retreats",
+    ],
+    galleryTitle: "Youth Events",
+    galleryDescription:
+      "Photos from youth gatherings, hangouts, and special events can be featured here.",
+    galleryImages: [
+      {
+        src: "/images/Youth.png",
+        alt: "Students together at a youth ministry gathering",
+      },
     ],
   },
   "adult-discipleship": {

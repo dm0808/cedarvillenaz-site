@@ -40,6 +40,7 @@ export default async function MinistryDetailPage({ params }: PageProps) {
   }
 
   const copy = ministryPageCopy[ministry.slug];
+  const hasGallery = Boolean(copy.galleryImages?.length);
 
   return (
     <section className="mx-auto w-full max-w-6xl px-4 py-14 md:px-8 md:py-20">
@@ -60,17 +61,42 @@ export default async function MinistryDetailPage({ params }: PageProps) {
 
           <Card className="mt-6">
             <CardHeader>
-              <CardTitle className="font-heading text-2xl">What to Expect</CardTitle>
+              <CardTitle className="font-heading text-2xl">
+                {hasGallery ? copy.galleryTitle ?? "Photos" : "What to Expect"}
+              </CardTitle>
             </CardHeader>
             <CardContent>
-              <ul className="space-y-2 text-muted-foreground">
-                {copy.details.map((detail) => (
-                  <li key={detail} className="flex items-start gap-2">
-                    <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent" />
-                    <span>{detail}</span>
-                  </li>
-                ))}
-              </ul>
+              {hasGallery ? (
+                <div className="space-y-4">
+                  {copy.galleryDescription ? (
+                    <p className="text-muted-foreground">{copy.galleryDescription}</p>
+                  ) : null}
+                  <div className="grid gap-4 sm:grid-cols-2">
+                    {copy.galleryImages?.map((image) => (
+                      <div
+                        key={image.src}
+                        className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-border/60"
+                      >
+                        <Image
+                          src={image.src}
+                          alt={image.alt}
+                          fill
+                          className="object-cover"
+                        />
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              ) : (
+                <ul className="space-y-2 text-muted-foreground">
+                  {copy.details.map((detail) => (
+                    <li key={detail} className="flex items-start gap-2">
+                      <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent" />
+                      <span>{detail}</span>
+                    </li>
+                  ))}
+                </ul>
+              )}
             </CardContent>
           </Card>
 

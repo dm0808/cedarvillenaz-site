@@ -116,8 +116,7 @@ export const ministries = [
     description:
       "Men growing in Christ through Bible study, brotherhood, practical service, and faithful leadership at home, church, and in the community.",
     icon: Compass,
-    image:
-      "/images/men-on-mission.png.png",
+    image: "/images/Men.jpg",
   },
 ] as const;
 

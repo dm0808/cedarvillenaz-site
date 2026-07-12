@@ -82,8 +82,7 @@ export const ministries = [
     description:
       "Creating space for students to ask real questions, build friendships, and follow Jesus with confidence.",
     icon: Sparkles,
-    image:
-      "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1400&q=80",
+    image: "/images/Youth.png",
   },
   {
     slug: "adult-discipleship",

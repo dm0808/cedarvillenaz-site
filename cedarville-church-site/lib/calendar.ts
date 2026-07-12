@@ -240,6 +240,7 @@ function categorizeEvent(title: string, description?: string): CalendarCategory 
 
   if (
     haystack.includes("discipleship") ||
+    haystack.includes("men of faith") ||
     haystack.includes("kids") ||
     haystack.includes("children") ||
     haystack.includes("youth") ||
@@ -264,6 +265,7 @@ function categorizeEvent(title: string, description?: string): CalendarCategory 
   }
 
   if (
+    haystack.includes("young at heart") ||
     haystack.includes("picnic") ||
     haystack.includes("fellowship") ||
     haystack.includes("dinner") ||

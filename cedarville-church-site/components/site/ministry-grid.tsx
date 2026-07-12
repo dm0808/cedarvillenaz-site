@@ -47,6 +47,8 @@ export function MinistryGrid() {
                     className={
                       ministry.slug === "men-on-mission"
                         ? "object-cover -scale-x-100"
+                        : ministry.slug === "worship-prayer"
+                          ? "object-cover object-[center_38%] scale-[1.08] transition-transform duration-500 group-hover:scale-[1.14]"
                         : "object-cover transition-transform duration-500 group-hover:scale-105"
                     }
                   />

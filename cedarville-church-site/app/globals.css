@@ -88,6 +88,14 @@ h6,
   box-shadow: 0 10px 24px rgba(3, 11, 18, 0.36);
 }
 
+.footer-description {
+  color: color-mix(in oklab, var(--primary-foreground) 80%, transparent);
+}
+
+.dark .footer-description {
+  color: #ffffff;
+}
+
 @media print {
   @page {
     margin: 0.5in;

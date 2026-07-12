@@ -7,14 +7,13 @@ import { useState } from "react";
 
 import { navLinks } from "@/lib/site-data";
 import { cn } from "@/lib/utils";
-import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/site/theme-toggle";
 
 export function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-border/70 bg-background/90 backdrop-blur">
+    <header className="sticky top-0 z-50 border-b border-white/15 bg-[#333132] text-white backdrop-blur dark:border-white/10 dark:bg-[#333132] dark:text-white">
       <div className="mx-auto flex w-full max-w-7xl items-center justify-between px-4 py-3 md:px-8">
         <Link href="/" className="flex items-center gap-2">
           <span className="relative block h-12 w-12 shrink-0">
@@ -37,7 +36,7 @@ export function Navbar() {
             <Link
               key={item.href}
               href={item.href}
-              className="text-sm font-medium text-foreground/85 transition-colors hover:text-primary"
+              className="text-sm font-medium text-white/90 transition-colors hover:text-white dark:text-white/90 dark:hover:text-white"
             >
               {item.label}
             </Link>
@@ -46,13 +45,10 @@ export function Navbar() {
 
         <div className="hidden items-center gap-3 md:flex">
           <ThemeToggle />
-          <Button asChild>
-            <Link href="/contact">I&apos;m New</Link>
-          </Button>
         </div>
 
         <button
-          className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-border text-foreground md:hidden"
+          className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/20 text-white md:hidden dark:border-white/20 dark:text-white"
           aria-label="Toggle menu"
           onClick={() => setOpen((prev) => !prev)}
         >
@@ -62,7 +58,7 @@ export function Navbar() {
 
       <div
         className={cn(
-          "grid overflow-hidden border-t border-border/60 bg-background transition-all md:hidden",
+          "grid overflow-hidden border-t border-white/15 bg-[#333132] text-white transition-all md:hidden dark:border-white/10 dark:bg-[#333132] dark:text-white",
           open ? "grid-rows-[1fr]" : "grid-rows-[0fr]",
         )}
       >
@@ -72,7 +68,7 @@ export function Navbar() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="text-sm font-medium"
+                className="text-sm font-medium text-white/90 transition-colors hover:text-white"
                 onClick={() => setOpen(false)}
               >
                 {item.label}
@@ -80,9 +76,6 @@ export function Navbar() {
             ))}
             <div className="flex items-center gap-3">
               <ThemeToggle />
-              <Button asChild className="flex-1">
-                <Link href="/contact">I&apos;m New</Link>
-              </Button>
             </div>
           </div>
         </div>

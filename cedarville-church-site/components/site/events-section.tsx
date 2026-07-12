@@ -21,7 +21,7 @@ export function EventsSection() {
           </p>
           <h2 className="mt-2 font-heading text-3xl md:text-4xl">Join Us This Season</h2>
         </div>
-        <Button asChild>
+        <Button asChild variant="outline">
           <Link href="/calendar">View Calendar</Link>
         </Button>
       </div>

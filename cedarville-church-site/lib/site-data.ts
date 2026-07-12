@@ -37,19 +37,25 @@ export const quickInfo = [
   {
     title: "Service Times",
     lines: [
-      { label: "Sunday School", value: "9:30 AM" },
-      { label: "Sunday Worship", value: "10:30 AM" },
+      { label: "Sunday School", value: churchInfo.sundaySchool },
+      { label: "Sunday Worship", value: churchInfo.sundayWorship },
     ],
     icon: CalendarDays,
   },
   {
     title: "Kids Ministry",
-    lines: [{ label: "Nursery-5th Grade", value: "Safe + Joyful" }],
+    lines: [
+      { label: "Sunday School", value: churchInfo.sundaySchool },
+      { label: "Sunday Worship", value: churchInfo.sundayWorship },
+    ],
     icon: Baby,
   },
   {
     title: "Find Us",
-    lines: [{ label: "125 S Main St", value: "Cedarville, Ohio 45314" }],
+    lines: [
+      { label: churchInfo.addressLine1 },
+      { label: churchInfo.addressLine2 },
+    ],
     icon: Compass,
   },
   {
@@ -172,8 +178,7 @@ export const monthlyCalendar = [
 ] as const;
 
 export const socialLinks = [
-  { label: "Facebook", href: "#" },
-  { label: "Instagram", href: "#" },
+  { label: "Facebook", href: "https://www.facebook.com/cedarnaz" },
   { label: "YouTube", href: "https://www.youtube.com/@CedarvilleChurchofNazarene" },
 ] as const;
 

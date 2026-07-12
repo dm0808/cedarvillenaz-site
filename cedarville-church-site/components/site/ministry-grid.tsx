@@ -52,7 +52,7 @@ export function MinistryGrid() {
                   />
                 </div>
                 <CardHeader>
-                  <span className="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-full bg-accent/20 text-accent-foreground">
+                  <span className="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-full bg-white text-black">
                     <Icon className="h-5 w-5" />
                   </span>
                   <CardTitle className="font-heading text-2xl">{ministry.title}</CardTitle>

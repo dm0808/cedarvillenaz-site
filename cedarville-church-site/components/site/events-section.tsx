@@ -67,7 +67,7 @@ export function EventsSection() {
           <p className="text-sm font-semibold uppercase tracking-[0.16em] text-secondary">
             Upcoming Events
           </p>
-          <h2 className="mt-2 font-heading text-3xl md:text-4xl">Join Us This Season</h2>
+          <h2 className="mt-2 font-heading text-3xl md:text-4xl">Join Us</h2>
         </div>
         <Button asChild variant="outline">
           <Link href="/calendar">View Calendar</Link>

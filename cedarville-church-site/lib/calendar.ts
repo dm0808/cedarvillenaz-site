@@ -51,39 +51,39 @@ export const calendarCategoryStyles: Record<
   }
 > = {
   Worship: {
-    screen: "border border-secondary/20 bg-secondary/15 text-secondary",
-    print: "border-l-4 border-l-[#476b45] bg-[#eef4ed] text-[#274326]",
-    legend: "bg-secondary/15 text-secondary",
+    screen: "border border-[#2f6b3b]/25 bg-[#eaf4ea] text-[#1f4a29]",
+    print: "border-l-4 border-l-[#2f6b3b] bg-[#eaf4ea] text-[#1f4a29]",
+    legend: "bg-[#eaf4ea] text-[#1f4a29]",
   },
   Discipleship: {
-    screen: "border border-accent/30 bg-accent/20 text-accent-foreground",
-    print: "border-l-4 border-l-[#d9a441] bg-[#fbf3df] text-[#6f5317]",
-    legend: "bg-accent/20 text-accent-foreground",
+    screen: "border border-[#2d5b91]/25 bg-[#eaf1fb] text-[#173a63]",
+    print: "border-l-4 border-l-[#2d5b91] bg-[#eaf1fb] text-[#173a63]",
+    legend: "bg-[#eaf1fb] text-[#173a63]",
   },
   Study: {
-    screen: "border border-primary/20 bg-primary/10 text-primary dark:text-white",
-    print: "border-l-4 border-l-[#0e2433] bg-[#e9eef2] text-[#0e2433]",
-    legend: "bg-primary/10 text-primary dark:text-white",
+    screen: "border border-[#b9831f]/25 bg-[#fff4db] text-[#6e4a0f]",
+    print: "border-l-4 border-l-[#b9831f] bg-[#fff4db] text-[#6e4a0f]",
+    legend: "bg-[#fff4db] text-[#6e4a0f]",
   },
   Prayer: {
-    screen: "border border-[#74848f]/30 bg-[#74848f]/15 text-[#50606b] dark:text-[#c8d3dd]",
-    print: "border-l-4 border-l-[#74848f] bg-[#eef2f4] text-[#42515a]",
-    legend: "bg-[#74848f]/15 text-[#50606b] dark:text-[#c8d3dd]",
+    screen: "border border-[#7a5c99]/25 bg-[#f2ecf8] text-[#4f3b6a]",
+    print: "border-l-4 border-l-[#7a5c99] bg-[#f2ecf8] text-[#4f3b6a]",
+    legend: "bg-[#f2ecf8] text-[#4f3b6a]",
   },
   Outreach: {
-    screen: "border border-[#70956a]/25 bg-[#70956a]/15 text-[#355230] dark:text-[#dce8da]",
-    print: "border-l-4 border-l-[#70956a] bg-[#edf4ec] text-[#355230]",
-    legend: "bg-[#70956a]/15 text-[#355230] dark:text-[#dce8da]",
+    screen: "border border-[#2f7c74]/25 bg-[#e7f5f2] text-[#1d544f]",
+    print: "border-l-4 border-l-[#2f7c74] bg-[#e7f5f2] text-[#1d544f]",
+    legend: "bg-[#e7f5f2] text-[#1d544f]",
   },
   Fellowship: {
-    screen: "border border-[#b48a3e]/25 bg-[#d9a441]/15 text-[#7b5f27] dark:text-[#f1dfb7]",
-    print: "border-l-4 border-l-[#b48a3e] bg-[#faf1df] text-[#6f5317]",
-    legend: "bg-[#d9a441]/15 text-[#7b5f27] dark:text-[#f1dfb7]",
+    screen: "border border-[#b8613c]/25 bg-[#faece5] text-[#7a3820]",
+    print: "border-l-4 border-l-[#b8613c] bg-[#faece5] text-[#7a3820]",
+    legend: "bg-[#faece5] text-[#7a3820]",
   },
   General: {
-    screen: "border border-border/70 bg-card text-foreground",
-    print: "border-l-4 border-l-[#74848f] bg-[#f4f7f8] text-[#33414a]",
-    legend: "bg-card text-foreground",
+    screen: "border border-[#6b7c86]/25 bg-[#eef2f4] text-[#33414a]",
+    print: "border-l-4 border-l-[#6b7c86] bg-[#eef2f4] text-[#33414a]",
+    legend: "bg-[#eef2f4] text-[#33414a]",
   },
 };
 

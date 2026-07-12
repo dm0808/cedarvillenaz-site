@@ -254,6 +254,8 @@ function categorizeEvent(title: string, description?: string): CalendarCategory 
 
   if (
     haystack.includes("outreach") ||
+    haystack.includes("bridges of hope") ||
+    haystack.includes("homeless") ||
     haystack.includes("mission") ||
     haystack.includes("serve") ||
     haystack.includes("community")

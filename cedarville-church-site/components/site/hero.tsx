@@ -22,8 +22,8 @@ export function Hero() {
             Knowing, Showing, and Going <em>The Way</em> of Jesus
           </h1>
           <p className="mt-6 max-w-2xl text-base text-white/90 md:text-lg">
-            A welcoming community of faith growing together in Christ and serving
-            Cedarville with love.
+            We are a welcoming community of faith, growing together in Christ and
+            serving Cedarville with love.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Button asChild variant="outline" size="lg" className="border-white/60 bg-white/10 text-white hover:bg-white/20">

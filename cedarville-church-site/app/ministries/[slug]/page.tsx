@@ -51,7 +51,7 @@ export default async function MinistryDetailPage({ params }: PageProps) {
             src={ministry.image}
             alt={ministry.title}
             fill
-            className={`object-cover ${ministry.slug === "men-on-mission" ? "-scale-x-100" : ""} ${ministry.slug === "worship-prayer" ? "object-[center_38%] scale-[1.05]" : ""}`}
+            className={`object-cover ${ministry.slug === "men-on-mission" ? "-scale-x-100" : ""} ${ministry.slug === "worship-prayer" ? "object-[center_38%] scale-[1.05]" : ""} ${ministry.slug === "adult-discipleship" ? "object-[center_58%] scale-[1.12]" : ""}`}
           />
         </div>
 

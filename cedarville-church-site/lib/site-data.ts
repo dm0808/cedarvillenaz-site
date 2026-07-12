@@ -86,12 +86,11 @@ export const ministries = [
   },
   {
     slug: "adult-discipleship",
-    title: "Adult Discipleship",
+    title: "Young at Heart",
     description:
-      "Growing together through Bible studies, prayer groups, and Christ-centered relationships.",
+      "A welcoming group of older men and women growing in friendship, encouragement, and faith together.",
     icon: BookOpen,
-    image:
-      "https://images.unsplash.com/photo-1517486430290-35657bdcef51?auto=format&fit=crop&w=1400&q=80",
+    image: "/images/Young at Heart/IMG_2879.JPEG",
   },
   {
     slug: "missions-outreach",
@@ -232,11 +231,20 @@ export const ministryPageCopy: Record<
   },
   "adult-discipleship": {
     summary:
-      "Adult Discipleship is where faith becomes practical through Scripture, community, and prayer.",
+      "Young at Heart brings older men and women together for friendship, encouragement, and Christ-centered community.",
     details: [
-      "Small groups for every season of life",
-      "Bible studies focused on transformation",
-      "Prayer gatherings for church and community",
+      "Meaningful fellowship with older adults who share life and faith together",
+      "Encouraging conversation, meals, and outings throughout the year",
+      "A welcoming place to grow in friendship and stay connected in the church family",
+    ],
+    galleryTitle: "Young at Heart Photos",
+    galleryDescription:
+      "Photos from Young at Heart gatherings and shared moments can be featured here.",
+    galleryImages: [
+      {
+        src: "/images/Young at Heart/IMG_2879.JPEG",
+        alt: "Young at Heart group gathering together around a table",
+      },
     ],
   },
   "missions-outreach": {

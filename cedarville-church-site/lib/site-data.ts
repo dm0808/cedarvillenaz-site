@@ -214,8 +214,20 @@ export const ministryPageCopy: Record<
       "Photos from youth gatherings, hangouts, and special events can be featured here.",
     galleryImages: [
       {
-        src: "/images/Youth.png",
-        alt: "Students together at a youth ministry gathering",
+        src: "/images/Youth 1.JPG",
+        alt: "Students together at a youth ministry event",
+      },
+      {
+        src: "/images/Youth 2.JPG",
+        alt: "Youth ministry friends spending time together",
+      },
+      {
+        src: "/images/Youth 3.JPG",
+        alt: "Students connecting during a youth ministry outing",
+      },
+      {
+        src: "/images/Youth 4.JPG",
+        alt: "Youth ministry group photo from a shared event",
       },
     ],
   },

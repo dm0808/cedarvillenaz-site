@@ -25,12 +25,12 @@ export const metadata: Metadata = {
     default: "Cedarville Church of the Nazarene",
     template: "%s | Cedarville Church of the Nazarene",
   },
-  description:
-    "A welcoming community of faith growing together in Christ and serving Cedarville with love.",
+    description:
+      "We are a welcoming community of faith, growing together in Christ and serving Cedarville with love.",
   openGraph: {
     title: "Cedarville Church of the Nazarene",
     description:
-      "A welcoming community of faith growing together in Christ and serving Cedarville with love.",
+      "We are a welcoming community of faith, growing together in Christ and serving Cedarville with love.",
     type: "website",
     url: "https://cedarvillenazarene.org",
   },

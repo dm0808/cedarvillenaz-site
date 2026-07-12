@@ -90,7 +90,7 @@ export const ministries = [
     description:
       "A welcoming group of older men and women growing in friendship, encouragement, and faith together.",
     icon: BookOpen,
-    image: "/images/Young at Heart/IMG_2879.JPEG",
+    image: "/images/Young at Heart/IMG_6045.jpg",
   },
   {
     slug: "missions-outreach",
@@ -242,7 +242,7 @@ export const ministryPageCopy: Record<
       "Photos from Young at Heart gatherings and shared moments can be featured here.",
     galleryImages: [
       {
-        src: "/images/Young at Heart/IMG_2879.JPEG",
+        src: "/images/Young at Heart/IMG_6045.jpg",
         alt: "Young at Heart group gathering together around a table",
       },
     ],

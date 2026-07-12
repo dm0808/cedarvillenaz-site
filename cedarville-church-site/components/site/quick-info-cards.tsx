@@ -36,7 +36,14 @@ export function QuickInfoCards() {
                     <span className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-full bg-secondary/15 text-secondary">
                       <Icon className="h-5 w-5" />
                     </span>
-                    <h3 className="font-heading text-2xl">{item.title}</h3>
+                    <div className="flex items-start justify-between gap-3">
+                      <h3 className="font-heading text-2xl">{item.title}</h3>
+                      {"titleSuffix" in item ? (
+                        <span className="pt-1 text-right text-sm text-muted-foreground">
+                          {item.titleSuffix}
+                        </span>
+                      ) : null}
+                    </div>
                     <div className="mt-5 space-y-2 text-sm">
                       {item.lines.map((line) => {
                         const value = "value" in line ? line.value : undefined;

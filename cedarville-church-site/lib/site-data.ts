@@ -44,6 +44,7 @@ export const quickInfo = [
   },
   {
     title: "Kids Ministry",
+    titleSuffix: "Nursery - 12 years old",
     lines: [
       { label: "Sunday School", value: churchInfo.sundaySchool },
       { label: "Sunday Worship", value: churchInfo.sundayWorship },

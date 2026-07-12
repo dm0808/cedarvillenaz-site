@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { BookOpen } from "lucide-react";
 
 import { PageHero } from "@/components/site/page-hero";
 import { Button } from "@/components/ui/button";
@@ -139,18 +140,6 @@ const coreValuesSections = [
   },
 ] as const;
 
-const doveBulletStyle = {
-  backgroundColor: "var(--secondary)",
-  WebkitMaskImage: "url(/icons/core-values/simpleDoveIcon.svg)",
-  maskImage: "url(/icons/core-values/simpleDoveIcon.svg)",
-  WebkitMaskRepeat: "no-repeat",
-  maskRepeat: "no-repeat",
-  WebkitMaskPosition: "center",
-  maskPosition: "center",
-  WebkitMaskSize: "contain",
-  maskSize: "contain",
-} as const;
-
 export default function BeliefsPage() {
   return (
     <>
@@ -172,7 +161,7 @@ export default function BeliefsPage() {
                 className="group flex min-h-24 items-center gap-3 border border-border/70 bg-background/80 px-5 py-5 text-foreground transition-colors hover:border-secondary/70 hover:bg-secondary/10 md:py-6"
               >
                 <span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-secondary/15" aria-hidden="true">
-                  <span className="block h-5 w-5" style={doveBulletStyle} />
+                  <BookOpen className="h-4 w-4 text-secondary" strokeWidth={1.8} />
                 </span>
                 <span className="font-heading text-lg leading-tight">Statement of Mission</span>
               </a>
@@ -181,7 +170,7 @@ export default function BeliefsPage() {
                 className="group flex min-h-24 items-center gap-3 border border-border/70 bg-background/80 px-5 py-5 text-foreground transition-colors hover:border-secondary/70 hover:bg-secondary/10 md:py-6"
               >
                 <span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-secondary/15" aria-hidden="true">
-                  <span className="block h-5 w-5" style={doveBulletStyle} />
+                  <BookOpen className="h-4 w-4 text-secondary" strokeWidth={1.8} />
                 </span>
                 <span className="font-heading text-lg leading-tight">Statement of Beliefs</span>
               </a>
@@ -190,7 +179,7 @@ export default function BeliefsPage() {
                 className="group flex min-h-24 items-center gap-3 border border-border/70 bg-background/80 px-5 py-5 text-foreground transition-colors hover:border-secondary/70 hover:bg-secondary/10 md:py-6"
               >
                 <span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-secondary/15" aria-hidden="true">
-                  <span className="block h-5 w-5" style={doveBulletStyle} />
+                  <BookOpen className="h-4 w-4 text-secondary" strokeWidth={1.8} />
                 </span>
                 <span className="font-heading text-lg leading-tight">Core Values</span>
               </a>
@@ -199,7 +188,7 @@ export default function BeliefsPage() {
                 className="group flex min-h-24 items-center gap-3 border border-border/70 bg-background/80 px-5 py-5 text-foreground transition-colors hover:border-secondary/70 hover:bg-secondary/10 md:py-6"
               >
                 <span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-secondary/15" aria-hidden="true">
-                  <span className="block h-5 w-5" style={doveBulletStyle} />
+                  <BookOpen className="h-4 w-4 text-secondary" strokeWidth={1.8} />
                 </span>
                 <span className="font-heading text-lg leading-tight">Articles of Faith</span>
               </a>
@@ -248,7 +237,7 @@ export default function BeliefsPage() {
             <Card key={statement} className="h-full rounded-none border border-border/70 bg-background/80 shadow-none">
               <CardContent className="flex h-full items-center gap-3 p-5">
                 <span className="mt-0.5 inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-secondary/15" aria-hidden="true">
-                  <span className="block h-5 w-5" style={doveBulletStyle} />
+                  <BookOpen className="h-4 w-4 text-secondary" strokeWidth={1.8} />
                 </span>
                 <p className="text-base leading-relaxed text-muted-foreground">{statement}</p>
               </CardContent>
@@ -329,7 +318,7 @@ export default function BeliefsPage() {
                   <summary className="flex cursor-pointer list-none items-center justify-between gap-4 px-5 py-4 text-left marker:content-none md:px-6 md:py-5">
                     <div className="flex min-w-0 items-center gap-3">
                       <span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-secondary/15" aria-hidden="true">
-                        <span className="block h-5 w-5" style={doveBulletStyle} />
+                        <BookOpen className="h-4 w-4 text-secondary" strokeWidth={1.8} />
                       </span>
                       <span className="font-heading text-lg leading-tight text-foreground md:text-xl">{item.title}</span>
                     </div>

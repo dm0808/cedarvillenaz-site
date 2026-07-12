@@ -96,9 +96,9 @@ export const ministries = [
   },
   {
     slug: "missions-outreach",
-    title: "Missions & Outreach",
+    title: "Bridges of Hope",
     description:
-      "Serving our neighbors through compassionate jail outreach, discipleship support, and restoration-focused care.",
+      "Serving neighbors experiencing homelessness through compassionate outreach, practical support, and Christ-centered hope.",
     icon: HandHelping,
     image: "/images/prison_ministry.png",
   },
@@ -214,11 +214,11 @@ export const ministryPageCopy: Record<string, { summary: string; details: string
   },
   "missions-outreach": {
     summary:
-      "Missions & Outreach equips our church family to serve through jail ministry, reentry encouragement, and gospel-centered support for families.",
+      "Bridges of Hope equips our church family to serve neighbors experiencing homelessness through practical care, faithful presence, and gospel-centered hope.",
     details: [
-      "Jail visitation and encouragement opportunities",
-      "Bible study resources and prayer support",
-      "Practical care for reentry and family needs",
+      "Outreach that meets practical needs with dignity and compassion",
+      "Prayer, encouragement, and Christ-centered relationship building",
+      "Support opportunities for individuals and families facing housing instability",
     ],
   },
   "worship-prayer": {

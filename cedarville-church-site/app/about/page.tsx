@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 
 import { MotionReveal } from "@/components/site/motion-reveal";
 import { PageHero } from "@/components/site/page-hero";
@@ -10,7 +11,7 @@ export const metadata: Metadata = {
 };
 
 const leadershipTeam = [
-  { slot: "Pastor", name: "Jesse Aaron", title: "Lead Pastor" },
+  { slot: "Pastor", name: "Jesse Aaron", title: "Pastor", image: "/images/Staff Board/Jesse.jpg" },
   { slot: "Board Member", name: "Nick Hopkins", title: "Board Member" },
   { slot: "Board Member", name: "Ted Kerns", title: "Board Member" },
   { slot: "Board Member", name: "Rachel Pennington", title: "Board Member" },
@@ -48,16 +49,27 @@ export default function AboutPage() {
           {leadershipTeam.map((member, index) => (
             <MotionReveal key={`${member.slot}-${index}`} transition={{ delay: index * 0.05 }}>
               <Card className="h-full overflow-hidden border-border/60 bg-card/95 shadow-sm">
-                <div className="flex aspect-[4/3] items-center justify-center border-b border-border/60 bg-[linear-gradient(145deg,rgba(14,36,51,0.10),rgba(71,107,69,0.10),rgba(116,132,143,0.16))] px-6 text-center">
-                  <div>
-                    <p className="text-xs font-semibold uppercase tracking-[0.18em] text-secondary">
-                      Photo Space
-                    </p>
-                    <p className="mt-2 text-sm text-muted-foreground">
-                      Add a portrait or ministry photo here
-                    </p>
+                {"image" in member ? (
+                  <div className="relative aspect-[4/3] overflow-hidden border-b border-border/60 bg-[linear-gradient(145deg,rgba(14,36,51,0.10),rgba(71,107,69,0.10),rgba(116,132,143,0.16))]">
+                    <Image
+                      src={member.image}
+                      alt={member.name}
+                      fill
+                      className="object-cover object-center"
+                    />
                   </div>
-                </div>
+                ) : (
+                  <div className="flex aspect-[4/3] items-center justify-center border-b border-border/60 bg-[linear-gradient(145deg,rgba(14,36,51,0.10),rgba(71,107,69,0.10),rgba(116,132,143,0.16))] px-6 text-center">
+                    <div>
+                      <p className="text-xs font-semibold uppercase tracking-[0.18em] text-secondary">
+                        Photo Space
+                      </p>
+                      <p className="mt-2 text-sm text-muted-foreground">
+                        Add a portrait or ministry photo here
+                      </p>
+                    </div>
+                  </div>
+                )}
                 <CardHeader className="pb-3">
                   <p className="text-xs font-semibold uppercase tracking-[0.16em] text-secondary">
                     {member.slot}

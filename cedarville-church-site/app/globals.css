@@ -130,25 +130,26 @@ h6,
 }
 
 .church-map-tooltip {
-  border: 0;
-  background: transparent;
-  box-shadow: none;
-}
-
-.church-map-tooltip .leaflet-tooltip-content {
-  border-radius: 9999px;
-  background: rgba(14, 36, 51, 0.92);
-  color: var(--primary-foreground);
-  padding: 0.45rem 0.8rem;
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  box-shadow: 0 10px 24px rgba(14, 36, 51, 0.18);
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.96);
+  color: var(--foreground);
+  padding: 0.9rem 1.25rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0;
+  text-transform: none;
+  box-shadow: 0 14px 34px rgba(14, 36, 51, 0.18);
+  border: 1px solid rgba(213, 217, 220, 0.9);
+  white-space: nowrap;
 }
 
 .church-map-tooltip.leaflet-tooltip-top::before {
-  border-top-color: rgba(14, 36, 51, 0.92);
+  border-top-color: rgba(255, 255, 255, 0.96);
+  bottom: -10px;
+  margin-left: -10px;
+  border-width: 10px 10px 0;
+  filter: drop-shadow(0 4px 8px rgba(14, 36, 51, 0.08));
 }
 
 @keyframes church-map-beacon-pulse {

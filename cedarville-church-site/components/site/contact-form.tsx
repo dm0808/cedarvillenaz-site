@@ -12,37 +12,38 @@ export function ContactForm() {
 
   return (
     <form
-      className="space-y-4"
+      className="space-y-5"
       onSubmit={(event) => {
         event.preventDefault();
         setSubmitted(true);
       }}
     >
-      <div className="grid gap-4 sm:grid-cols-2">
+      <div className="grid gap-4 md:grid-cols-3">
         <div className="space-y-2">
-          <Label htmlFor="firstName">First Name</Label>
-          <Input id="firstName" name="firstName" required />
+          <Label htmlFor="name">Your Name</Label>
+          <Input id="name" name="name" required />
         </div>
         <div className="space-y-2">
-          <Label htmlFor="lastName">Last Name</Label>
-          <Input id="lastName" name="lastName" required />
+          <Label htmlFor="email">Your Email</Label>
+          <Input id="email" name="email" type="email" required />
+        </div>
+        <div className="space-y-2">
+          <Label htmlFor="subject">Subject</Label>
+          <Input id="subject" name="subject" />
         </div>
       </div>
       <div className="space-y-2">
-        <Label htmlFor="email">Email</Label>
-        <Input id="email" name="email" type="email" required />
-      </div>
-      <div className="space-y-2">
-        <Label htmlFor="message">Message</Label>
+        <Label htmlFor="message">Your Message</Label>
         <Textarea
           id="message"
           name="message"
           placeholder="How can we pray for you or help you get connected?"
           required
+          className="min-h-[260px]"
         />
       </div>
       <Button type="submit" size="lg">
-        Send Message
+        Send
       </Button>
       {submitted ? (
         <p className="text-sm text-secondary">

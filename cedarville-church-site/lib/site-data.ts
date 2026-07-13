@@ -19,8 +19,8 @@ export const churchInfo = {
   sundaySchool: "9:30 AM",
   sundayWorship: "10:30 AM",
   coordinates: {
-    lat: 39.7443,
-    lng: -83.8115,
+    lat: 39.73693573006103,
+    lng: -83.80362317116459,
   },
 };
 

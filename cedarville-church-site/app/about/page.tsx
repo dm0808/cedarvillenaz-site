@@ -61,11 +61,6 @@ export default function AboutPage() {
               Meet Our Leaders
             </p>
             <h2 className="mt-3 font-heading text-3xl md:text-5xl">Serving Cedarville With Faithful Leadership</h2>
-            <p className="mt-4 text-base leading-relaxed text-muted-foreground md:text-lg">
-              This page is set up with dedicated space for your pastor, board members,
-              treasurer and secretary, and children&apos;s pastor. Each card includes a
-              photo area plus editable name and title text.
-            </p>
           </div>
         </MotionReveal>
 
@@ -109,19 +104,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="mx-auto w-full max-w-7xl px-4 pb-16 md:px-8 md:pb-24">
-        <MotionReveal>
-          <Card className="border-border/60 bg-primary/5">
-            <CardHeader>
-              <CardTitle className="font-heading text-2xl">Next Step</CardTitle>
-            </CardHeader>
-            <CardContent className="text-muted-foreground">
-              When you are ready, I can replace each placeholder with the actual names,
-              titles, and photos for every person on the leadership team.
-            </CardContent>
-          </Card>
-        </MotionReveal>
-      </section>
     </>
   );
 }

@@ -204,17 +204,17 @@ export const ministryPageCopy: Record<
       {
         src: "/images/Children/IMG_1738.JPG",
         alt: "Kids Ministry children participating in a Bible-themed classroom activity",
-        className: "object-cover object-[center_26%] scale-[1.04]",
+        className: "object-cover object-[52%_34%] scale-[1.22]",
       },
       {
         src: "/images/Children/IMG_1739.JPG",
         alt: "Kids Ministry children acting out a lesson together in the classroom",
-        className: "object-cover object-[center_30%] scale-[1.05]",
+        className: "object-cover object-[54%_34%] scale-[1.24]",
       },
       {
         src: "/images/Children/IMG_1740.JPG",
         alt: "A child smiling during a Kids Ministry activity",
-        className: "object-cover object-[center_24%] scale-[1.08]",
+        className: "object-cover object-[56%_30%] scale-[1.26]",
       },
       {
         src: "/images/Children/IMG_1741.JPG",

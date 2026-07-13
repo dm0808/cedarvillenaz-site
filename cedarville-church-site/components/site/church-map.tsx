@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo } from "react";
-import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
+import { MapContainer, Marker, Popup, TileLayer, Tooltip } from "react-leaflet";
 import L from "leaflet";
 
 import { churchInfo } from "@/lib/site-data";
@@ -36,7 +36,7 @@ export function ChurchMap({ className }: ChurchMapProps) {
         center={center}
         zoom={14}
         className="h-[600px] w-full"
-        scrollWheelZoom={false}
+        scrollWheelZoom
         attributionControl={false}
       >
         <TileLayer
@@ -44,6 +44,14 @@ export function ChurchMap({ className }: ChurchMapProps) {
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
         <Marker position={center} icon={markerIcon}>
+          <Tooltip
+            permanent
+            direction="top"
+            offset={[0, -14]}
+            className="church-map-tooltip"
+          >
+            {churchInfo.name}
+          </Tooltip>
           <Popup>{churchInfo.name}</Popup>
         </Marker>
       </MapContainer>

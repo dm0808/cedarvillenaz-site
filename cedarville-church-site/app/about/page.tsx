@@ -10,12 +10,12 @@ export const metadata: Metadata = {
 };
 
 const leadershipTeam = [
-  { slot: "Pastor", name: "Add Name", title: "Lead Pastor" },
-  { slot: "Board Member", name: "Add Name", title: "Board Member" },
-  { slot: "Board Member", name: "Add Name", title: "Board Member" },
-  { slot: "Board Member", name: "Add Name", title: "Board Member" },
-  { slot: "Treasurer / Secretary", name: "Add Name", title: "Treasurer / Secretary" },
-  { slot: "Children's Pastor", name: "Add Name", title: "Children's Pastor" },
+  { slot: "Pastor", name: "Jesse Aaron", title: "Lead Pastor" },
+  { slot: "Board Member", name: "Nick Hopkins", title: "Board Member" },
+  { slot: "Board Member", name: "Ted Kerns", title: "Board Member" },
+  { slot: "Board Member", name: "Rachel Pennington", title: "Board Member" },
+  { slot: "Treasurer / Secretary", name: "Pam Green", title: "Treasurer / Secretary" },
+  { slot: "Sunday School Superintendent", name: "Cheryl Kerns", title: "Sunday School Superintendent" },
 ] as const;
 
 export default function AboutPage() {

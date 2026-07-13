@@ -14,7 +14,9 @@ export default function CalendarPage() {
       <PageHero
         title="Calendar"
         subtitle="Stay up to date with worship gatherings, ministry opportunities, and special events from our live church calendar."
-        image="https://images.unsplash.com/photo-1506784693919-ef06d93c28d2?auto=format&fit=crop&w=1900&q=80"
+        image="/images/mural.jpg"
+        imageClassName="object-cover object-center scale-[1.06]"
+        overlayClassName="absolute inset-0 bg-[linear-gradient(115deg,rgba(14,36,51,0.88),rgba(51,49,50,0.58),rgba(116,132,143,0.52))]"
       />
 
       <section className="mx-auto w-full max-w-7xl px-4 py-14 md:px-8 md:py-20">

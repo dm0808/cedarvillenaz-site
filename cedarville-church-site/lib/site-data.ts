@@ -73,8 +73,7 @@ export const ministries = [
     description:
       "Helping children know Jesus through Bible teaching, worship, fun, and friendships.",
     icon: Baby,
-    image:
-      "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1400&q=80",
+    image: "/images/Children/IMG_5947.JPEG",
   },
   {
     slug: "youth-ministry",

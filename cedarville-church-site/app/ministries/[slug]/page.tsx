@@ -82,7 +82,7 @@ export default async function MinistryDetailPage({ params }: PageProps) {
                           src={image.src}
                           alt={image.alt}
                           fill
-                          className="object-cover"
+                          className={image.className ?? "object-cover"}
                         />
                       </div>
                     ))}

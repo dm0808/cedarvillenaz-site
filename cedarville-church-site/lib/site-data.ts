@@ -186,7 +186,7 @@ export const ministryPageCopy: Record<
     details: string[];
     galleryTitle?: string;
     galleryDescription?: string;
-    galleryImages?: { src: string; alt: string }[];
+    galleryImages?: { src: string; alt: string; className?: string }[];
   }
 > = {
   "kids-ministry": {
@@ -196,6 +196,61 @@ export const ministryPageCopy: Record<
       "Safe classrooms with trained volunteers",
       "Interactive Bible teaching and worship",
       "Weekly opportunities to build friendships",
+    ],
+    galleryTitle: "Kids Ministry Photos",
+    galleryDescription:
+      "Moments from Kids Ministry classes, games, and creative activities throughout the year.",
+    galleryImages: [
+      {
+        src: "/images/Children/IMG_1738.JPG",
+        alt: "Kids Ministry children participating in a Bible-themed classroom activity",
+        className: "object-cover object-[center_26%] scale-[1.04]",
+      },
+      {
+        src: "/images/Children/IMG_1739.JPG",
+        alt: "Kids Ministry children acting out a lesson together in the classroom",
+        className: "object-cover object-[center_30%] scale-[1.05]",
+      },
+      {
+        src: "/images/Children/IMG_1740.JPG",
+        alt: "A child smiling during a Kids Ministry activity",
+        className: "object-cover object-[center_24%] scale-[1.08]",
+      },
+      {
+        src: "/images/Children/IMG_1741.JPG",
+        alt: "Two children interacting during a Kids Ministry lesson activity",
+        className: "object-cover object-[center_24%] scale-[1.06]",
+      },
+      {
+        src: "/images/Children/IMG_1742.JPG",
+        alt: "A child participating in a creative Kids Ministry classroom game",
+        className: "object-cover object-[center_24%] scale-[1.06]",
+      },
+      {
+        src: "/images/Children/IMG_2869 (1).JPEG",
+        alt: "A volunteer and child in the Kids Ministry nursery play area",
+        className: "object-cover object-[center_20%] scale-[1.05]",
+      },
+      {
+        src: "/images/Children/IMG_2873.JPEG",
+        alt: "A child exploring toys in the Kids Ministry nursery room",
+        className: "object-cover object-[center_20%] scale-[1.05]",
+      },
+      {
+        src: "/images/Children/IMG_2880.JPEG",
+        alt: "Children enjoying an outdoor Kids Ministry activity together",
+        className: "object-cover object-[center_22%] scale-[1.03]",
+      },
+      {
+        src: "/images/Children/IMG_2888.JPEG",
+        alt: "Kids Ministry fun in front of the painted Bible mural wall",
+        className: "object-cover object-[center_48%] scale-[1.02]",
+      },
+      {
+        src: "/images/Children/IMG_5780.JPG",
+        alt: "Children and leaders gathered during a Kids Ministry game time",
+        className: "object-cover object-[center_22%] scale-[1.04]",
+      },
     ],
   },
   "youth-ministry": {

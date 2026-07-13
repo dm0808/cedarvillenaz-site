@@ -80,7 +80,16 @@ export function CalendarPrintView({ mode }: CalendarPrintViewProps) {
         <header className="mb-6 border-b border-black/20 pb-4">
           <h1 className="font-heading text-3xl">Cedarville Church of the Nazarene</h1>
           <p className="mt-1 text-lg">This Month&apos;s Calendar Events</p>
-          <p className="mt-1 text-sm">{formatMonthLabel(activeDate)}</p>
+          <div className="mt-3 flex flex-wrap items-center justify-between gap-3">
+            <p className="text-sm">{formatMonthLabel(activeDate)}</p>
+            <div className="flex flex-wrap gap-2 text-xs font-medium">
+              {Object.entries(calendarCategoryStyles).map(([category, styles]) => (
+                <span key={category} className={`inline-flex rounded-full px-3 py-1 ${styles.print}`}>
+                  {category}
+                </span>
+              ))}
+            </div>
+          </div>
           <div className="mt-4 flex flex-wrap gap-2 print:hidden">
             <Link
               href={`/calendar/print/month?month=${formatMonthParam(new Date(activeDate.getFullYear(), activeDate.getMonth() - 1, 1))}`}
@@ -102,20 +111,8 @@ export function CalendarPrintView({ mode }: CalendarPrintViewProps) {
 
         {errorMessage ? <p className="mb-4 text-sm text-red-700">{errorMessage}</p> : null}
 
-        <section className="mb-6">
-          <h2 className="font-heading text-xl">Event Categories</h2>
-          <ul className="mt-2 space-y-2 text-sm">
-            {Object.entries(calendarCategoryStyles).map(([category, styles]) => (
-              <li key={category} className={`rounded px-2 py-1 ${styles.print}`}>
-                {category}
-              </li>
-            ))}
-          </ul>
-        </section>
-
         <section>
-          <h2 className="font-heading text-2xl">{formatMonthLabel(activeDate)}</h2>
-          <div className="mt-4 grid grid-cols-7 gap-2 border border-black/20 p-2">
+          <div className="grid grid-cols-7 gap-2 border border-black/20 p-2">
             {days.map((day) => (
               <div key={day} className="text-center text-sm font-semibold">
                 {day}
@@ -163,6 +160,16 @@ export function CalendarPrintView({ mode }: CalendarPrintViewProps) {
       <header className="mb-6 border-b border-black/20 pb-4">
         <h1 className="font-heading text-3xl">Cedarville Church of the Nazarene</h1>
         <p className="mt-1 text-lg">This Week&apos;s Calendar Events</p>
+        <div className="mt-3 flex flex-wrap items-center justify-between gap-3">
+          <p className="text-sm">Week of {formatDayLabel(weekStart)}</p>
+          <div className="flex flex-wrap gap-2 text-xs font-medium">
+            {Object.entries(calendarCategoryStyles).map(([category, styles]) => (
+              <span key={category} className={`inline-flex rounded-full px-3 py-1 ${styles.print}`}>
+                {category}
+              </span>
+            ))}
+          </div>
+        </div>
         <div className="mt-4 flex flex-wrap gap-2 print:hidden">
           <Link
             href={`/calendar/print/week?date=${formatDateKey(new Date(activeDate.getFullYear(), activeDate.getMonth(), activeDate.getDate() - 7))}`}

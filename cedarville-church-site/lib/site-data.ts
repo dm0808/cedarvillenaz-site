@@ -97,7 +97,7 @@ export const ministries = [
     description:
       "Serving neighbors experiencing homelessness through compassionate outreach, practical support, and Christ-centered hope.",
     icon: HandHelping,
-    image: "/images/prison_ministry.png",
+    image: "/images/bridges of hope.avif",
   },
   {
     slug: "worship-prayer",

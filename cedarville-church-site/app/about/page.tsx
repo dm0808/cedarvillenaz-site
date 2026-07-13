@@ -11,7 +11,13 @@ export const metadata: Metadata = {
 };
 
 const leadershipTeam = [
-  { slot: "Pastor", name: "Jesse Aaron", title: "Pastor", image: "/images/Staff Board/Jesse.jpg" },
+  {
+    slot: "Pastor",
+    name: "Jesse Aaron",
+    title: "Pastor",
+    image: "/images/Staff Board/Jesse wide.png",
+    imageClassName: "object-contain object-center p-3",
+  },
   { slot: "Board Member", name: "Nick Hopkins", title: "Board Member" },
   { slot: "Board Member", name: "Ted Kerns", title: "Board Member" },
   { slot: "Board Member", name: "Rachel Pennington", title: "Board Member" },
@@ -50,16 +56,16 @@ export default function AboutPage() {
             <MotionReveal key={`${member.slot}-${index}`} transition={{ delay: index * 0.05 }}>
               <Card className="h-full overflow-hidden border-border/60 bg-card/95 shadow-sm">
                 {"image" in member ? (
-                  <div className="relative aspect-[4/3] overflow-hidden border-b border-border/60 bg-[linear-gradient(145deg,rgba(14,36,51,0.10),rgba(71,107,69,0.10),rgba(116,132,143,0.16))]">
+                  <div className="relative aspect-[4/5] overflow-hidden border-b border-border/60 bg-[linear-gradient(145deg,rgba(14,36,51,0.10),rgba(71,107,69,0.10),rgba(116,132,143,0.16))]">
                     <Image
                       src={member.image}
                       alt={member.name}
                       fill
-                      className="object-cover object-center"
+                      className={"imageClassName" in member ? member.imageClassName : "object-cover object-center"}
                     />
                   </div>
                 ) : (
-                  <div className="flex aspect-[4/3] items-center justify-center border-b border-border/60 bg-[linear-gradient(145deg,rgba(14,36,51,0.10),rgba(71,107,69,0.10),rgba(116,132,143,0.16))] px-6 text-center">
+                  <div className="flex aspect-[4/5] items-center justify-center border-b border-border/60 bg-[linear-gradient(145deg,rgba(14,36,51,0.10),rgba(71,107,69,0.10),rgba(116,132,143,0.16))] px-6 text-center">
                     <div>
                       <p className="text-xs font-semibold uppercase tracking-[0.18em] text-secondary">
                         Photo Space

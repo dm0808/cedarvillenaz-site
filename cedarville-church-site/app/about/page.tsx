@@ -24,6 +24,8 @@ const leadershipTeam = [
     slot: "Board Member",
     name: "Nick Hopkins",
     title: "Board Member",
+    image: "/images/Staff Board/Nick.png",
+    imageClassName: "object-cover object-[50%_24%] scale-[1.03] transition-transform duration-500 group-hover:scale-[1.09]",
     summary:
       "Nick serves on the church board, offering spiritual encouragement and practical leadership in support of the church family.",
   },
@@ -70,7 +72,7 @@ export default function AboutPage() {
         title="Leadership Team"
         subtitle="A family-focused church committed to holiness, discipleship, and serving our community with love."
         image="/images/Exterior.JPG"
-        imageClassName="object-cover object-[40%_54%] scale-[1.16]"
+        imageClassName="object-cover object-[72%_58%] scale-[1.03]"
         overlayClassName="absolute inset-0 bg-[linear-gradient(100deg,rgba(14,36,51,0.90),rgba(14,36,51,0.62),rgba(71,107,69,0.26))]"
       />
 

@@ -16,7 +16,8 @@ const leadershipTeam = [
     name: "Jesse Aaron",
     title: "Pastor",
     image: "/images/Staff Board/Jesse wide.png",
-    imageClassName: "object-cover object-[50%_18%]",
+    imageClassName: "object-contain object-center p-3",
+    imageWrapperClassName: "aspect-square",
   },
   { slot: "Board Member", name: "Nick Hopkins", title: "Board Member" },
   {
@@ -24,7 +25,8 @@ const leadershipTeam = [
     name: "Ted Kerns",
     title: "Board Member",
     image: "/images/Staff Board/Ted.jpeg",
-    imageClassName: "object-cover object-[50%_22%] scale-[1.06]",
+    imageClassName: "object-contain object-center p-3",
+    imageWrapperClassName: "aspect-square",
   },
   { slot: "Board Member", name: "Rachel Pennington", title: "Board Member" },
   {
@@ -32,14 +34,16 @@ const leadershipTeam = [
     name: "Pam Green",
     title: "Treasurer / Secretary",
     image: "/images/Staff Board/Pam.PNG",
-    imageClassName: "object-cover object-[50%_22%]",
+    imageClassName: "object-contain object-center p-3",
+    imageWrapperClassName: "aspect-square",
   },
   {
     slot: "Sunday School Superintendent",
     name: "Cheryl Kerns",
     title: "Sunday School Superintendent",
     image: "/images/Staff Board/Cheryl.jpeg",
-    imageClassName: "object-cover object-[50%_20%] scale-[1.04]",
+    imageClassName: "object-contain object-center p-3",
+    imageWrapperClassName: "aspect-square",
   },
 ] as const;
 
@@ -64,10 +68,10 @@ export default function AboutPage() {
           </div>
         </MotionReveal>
 
-        <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+        <div className="mt-10 grid justify-items-center gap-6 md:grid-cols-2 lg:grid-cols-3">
           {leadershipTeam.map((member, index) => (
             <MotionReveal key={`${member.slot}-${index}`} transition={{ delay: index * 0.05 }}>
-              <Card className="h-full overflow-hidden border-border/60 bg-card/95 shadow-sm">
+              <Card className="h-full w-full max-w-[18rem] overflow-hidden border-border/60 bg-card/95 shadow-sm">
                 {"image" in member ? (
                   <div className={`relative overflow-hidden border-b border-border/60 bg-[linear-gradient(145deg,rgba(14,36,51,0.10),rgba(71,107,69,0.10),rgba(116,132,143,0.16))] ${"imageWrapperClassName" in member ? member.imageWrapperClassName : "aspect-[4/5]"}`}>
                     <Image
@@ -78,7 +82,7 @@ export default function AboutPage() {
                     />
                   </div>
                 ) : (
-                  <div className="flex aspect-[4/5] items-center justify-center border-b border-border/60 bg-[linear-gradient(145deg,rgba(14,36,51,0.10),rgba(71,107,69,0.10),rgba(116,132,143,0.16))] px-6 text-center">
+                  <div className="flex aspect-square items-center justify-center border-b border-border/60 bg-[linear-gradient(145deg,rgba(14,36,51,0.10),rgba(71,107,69,0.10),rgba(116,132,143,0.16))] px-6 text-center">
                     <div>
                       <p className="text-xs font-semibold uppercase tracking-[0.18em] text-secondary">
                         Photo Space

@@ -6,7 +6,7 @@ import { PageHero } from "@/components/site/page-hero";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Who We Are",
+  title: "Leadership Team",
   description: "Learn who we are and what shapes our mission in Cedarville.",
 };
 
@@ -14,9 +14,11 @@ export default function AboutPage() {
   return (
     <>
       <PageHero
-        title="Who We Are"
+        title="Leadership Team"
         subtitle="A family-focused church committed to holiness, discipleship, and serving our community with love."
-        image="https://images.unsplash.com/photo-1438232992991-995b7058bbb3?auto=format&fit=crop&w=1900&q=80"
+        image="/images/Exterior.JPG"
+        imageClassName="object-cover object-[center_56%] scale-[1.06]"
+        overlayClassName="absolute inset-0 bg-[linear-gradient(115deg,rgba(14,36,51,0.84),rgba(51,49,50,0.46),rgba(71,107,69,0.42))]"
       />
       <section className="mx-auto grid w-full max-w-7xl gap-8 px-4 py-14 md:grid-cols-2 md:px-8 md:py-20">
         <MotionReveal>

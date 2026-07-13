@@ -109,15 +109,6 @@ export default function ContactPage() {
         </div>
 
         <div className="mt-8 grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
-          <Card className="overflow-hidden border-border/60 bg-card/95">
-            <CardHeader>
-              <CardTitle className="font-heading text-2xl">Times & Location</CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-5">
-              <ChurchMapClient />
-            </CardContent>
-          </Card>
-
           <div className="space-y-6">
             <Card className="border-border/60 bg-card/95">
               <CardHeader>
@@ -155,7 +146,21 @@ export default function ContactPage() {
               </CardContent>
             </Card>
           </div>
+
+          <div className="hidden lg:block" />
         </div>
+      </section>
+
+      <section className="pb-16 md:pb-24">
+        <div className="mx-auto w-full max-w-7xl px-4 md:px-8">
+          <div className="mb-6 max-w-2xl">
+            <p className="text-sm font-semibold uppercase tracking-[0.16em] text-secondary">
+              Times & Location
+            </p>
+            <h3 className="mt-2 font-heading text-3xl md:text-4xl">Find Us In Cedarville</h3>
+          </div>
+        </div>
+        <ChurchMapClient className="w-full overflow-hidden border-y border-border/60 bg-card/95" />
       </section>
     </>
   );

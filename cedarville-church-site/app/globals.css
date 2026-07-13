@@ -96,6 +96,55 @@ h6,
   color: #ffffff;
 }
 
+.church-map-marker-shell {
+  background: transparent;
+  border: 0;
+}
+
+.church-map-marker-beacon {
+  position: relative;
+  width: 22px;
+  height: 22px;
+}
+
+.church-map-marker-core {
+  position: absolute;
+  inset: 6px;
+  border-radius: 9999px;
+  background: var(--accent);
+  border: 2px solid rgba(14, 36, 51, 0.95);
+  box-shadow: 0 0 0 3px rgba(248, 247, 243, 0.72);
+}
+
+.church-map-marker-ring {
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+  border: 2px solid color-mix(in srgb, var(--secondary) 78%, white 22%);
+  opacity: 0;
+  animation: church-map-beacon-pulse 2.4s ease-out infinite;
+}
+
+.church-map-marker-ring-two {
+  animation-delay: 1.2s;
+}
+
+@keyframes church-map-beacon-pulse {
+  0% {
+    transform: scale(0.45);
+    opacity: 0.85;
+  }
+
+  70% {
+    opacity: 0.18;
+  }
+
+  100% {
+    transform: scale(2.2);
+    opacity: 0;
+  }
+}
+
 @media print {
   @page {
     margin: 0.5in;

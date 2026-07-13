@@ -6,26 +6,36 @@ import L from "leaflet";
 
 import { churchInfo } from "@/lib/site-data";
 
-const markerIcon = new L.Icon({
-  iconUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png",
-  iconRetinaUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png",
-  shadowUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png",
-  iconSize: [25, 41],
-  iconAnchor: [12, 41],
+const markerIcon = L.divIcon({
+  className: "church-map-marker-shell",
+  html: `
+    <div class="church-map-marker-beacon" aria-hidden="true">
+      <span class="church-map-marker-core"></span>
+      <span class="church-map-marker-ring church-map-marker-ring-one"></span>
+      <span class="church-map-marker-ring church-map-marker-ring-two"></span>
+    </div>
+  `,
+  iconSize: [22, 22],
+  iconAnchor: [11, 11],
+  popupAnchor: [0, -14],
 });
 
-export function ChurchMap() {
+type ChurchMapProps = {
+  className?: string;
+};
+
+export function ChurchMap({ className }: ChurchMapProps) {
   const center = useMemo(
     () => [churchInfo.coordinates.lat, churchInfo.coordinates.lng] as [number, number],
     [],
   );
 
   return (
-    <div className="overflow-hidden rounded-3xl border border-border/70">
+    <div className={className ?? "overflow-hidden rounded-3xl border border-border/70"}>
       <MapContainer
         center={center}
         zoom={14}
-        className="h-[360px] w-full"
+        className="h-[600px] w-full"
         scrollWheelZoom={false}
         attributionControl={false}
       >

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 import { MotionReveal } from "@/components/site/motion-reveal";
 import { PageHero } from "@/components/site/page-hero";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardHeader, CardTitle } from "@/components/ui/card";
 
 export const metadata: Metadata = {
   title: "Leadership Team",
@@ -95,9 +95,6 @@ export default function AboutPage() {
                   </p>
                   <CardTitle className="font-heading text-2xl">{member.name}</CardTitle>
                 </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground">{member.title}</p>
-                </CardContent>
               </Card>
             </MotionReveal>
           ))}

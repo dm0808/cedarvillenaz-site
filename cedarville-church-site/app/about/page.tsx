@@ -19,7 +19,13 @@ const leadershipTeam = [
     imageClassName: "object-cover object-[50%_18%]",
   },
   { slot: "Board Member", name: "Nick Hopkins", title: "Board Member" },
-  { slot: "Board Member", name: "Ted Kerns", title: "Board Member" },
+  {
+    slot: "Board Member",
+    name: "Ted Kerns",
+    title: "Board Member",
+    image: "/images/Staff Board/Ted.jpeg",
+    imageClassName: "object-cover object-[50%_22%] scale-[1.06]",
+  },
   { slot: "Board Member", name: "Rachel Pennington", title: "Board Member" },
   {
     slot: "Treasurer / Secretary",
@@ -33,7 +39,7 @@ const leadershipTeam = [
     name: "Cheryl Kerns",
     title: "Sunday School Superintendent",
     image: "/images/Staff Board/Cheryl.jpeg",
-    imageClassName: "object-cover object-[62%_42%] scale-[1.14]",
+    imageClassName: "object-cover object-[50%_20%] scale-[1.04]",
   },
 ] as const;
 

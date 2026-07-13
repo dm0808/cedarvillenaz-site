@@ -318,6 +318,41 @@ export const ministryPageCopy: Record<
       "Weekly prayer gatherings",
       "Special nights of worship throughout the year",
     ],
+    galleryTitle: "Worship & Prayer Moments",
+    galleryDescription:
+      "Photos from worship services, prayer gatherings, and sacred moments in the life of our church.",
+    galleryImages: [
+      {
+        src: "/images/Worship/IMG_2400.JPEG",
+        alt: "A prayer moment at the front of the sanctuary during worship",
+        className: "object-cover object-[center_24%] scale-[1.05]",
+      },
+      {
+        src: "/images/Worship/IMG_4151.JPEG",
+        alt: "The congregation gathered in the sanctuary during a worship service",
+        className: "object-cover object-[center_38%] scale-[1.04]",
+      },
+      {
+        src: "/images/Worship/IMG_4153.JPEG",
+        alt: "People seated together in worship beneath the sanctuary stained-glass light",
+        className: "object-cover object-[center_36%] scale-[1.04]",
+      },
+      {
+        src: "/images/Worship/IMG_4155.JPEG",
+        alt: "The church family standing together during a worship and prayer service",
+        className: "object-cover object-[center_34%] scale-[1.04]",
+      },
+      {
+        src: "/images/Worship/IMG_4156.JPG",
+        alt: "Congregation members standing for worship in the sanctuary",
+        className: "object-cover object-[center_34%] scale-[1.04]",
+      },
+      {
+        src: "/images/Worship/IMG_4160.JPEG",
+        alt: "A view of the sanctuary during worship with the church gathered in prayer",
+        className: "object-cover object-[center_34%] scale-[1.04]",
+      },
+    ],
   },
   "men-on-mission": {
     summary:

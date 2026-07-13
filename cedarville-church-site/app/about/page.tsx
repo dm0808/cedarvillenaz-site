@@ -16,8 +16,7 @@ const leadershipTeam = [
     name: "Jesse Aaron",
     title: "Pastor",
     image: "/images/Staff Board/Jesse wide.png",
-    imageClassName: "object-contain object-center p-3",
-    imageWrapperClassName: "aspect-square",
+    imageClassName: "object-cover object-[50%_18%]",
   },
   { slot: "Board Member", name: "Nick Hopkins", title: "Board Member" },
   { slot: "Board Member", name: "Ted Kerns", title: "Board Member" },
@@ -27,7 +26,7 @@ const leadershipTeam = [
     name: "Pam Green",
     title: "Treasurer / Secretary",
     image: "/images/Staff Board/Pam.PNG",
-    imageClassName: "object-contain object-center p-3",
+    imageClassName: "object-cover object-[50%_22%]",
   },
   {
     slot: "Sunday School Superintendent",

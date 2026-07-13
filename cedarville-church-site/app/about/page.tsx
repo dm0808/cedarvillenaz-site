@@ -25,8 +25,8 @@ export default function AboutPage() {
         title="Leadership Team"
         subtitle="A family-focused church committed to holiness, discipleship, and serving our community with love."
         image="/images/Exterior.JPG"
-        imageClassName="object-cover object-[center_56%] scale-[1.06]"
-        overlayClassName="absolute inset-0 bg-[linear-gradient(115deg,rgba(14,36,51,0.84),rgba(51,49,50,0.46),rgba(71,107,69,0.42))]"
+        imageClassName="object-cover object-[72%_58%] scale-[1.03]"
+        overlayClassName="absolute inset-0 bg-[linear-gradient(100deg,rgba(14,36,51,0.90),rgba(14,36,51,0.62),rgba(71,107,69,0.26))]"
       />
 
       <section className="mx-auto w-full max-w-7xl px-4 py-14 md:px-8 md:py-20">

@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 
-import { churchInfo, navLinks, socialLinks } from "@/lib/site-data";
+import { churchInfo } from "@/lib/site-data";
 import { Button } from "@/components/ui/button";
 import { ContactForm } from "@/components/site/contact-form";
 import { ChurchMapClient } from "@/components/site/church-map-client";
@@ -106,50 +105,9 @@ export default function ContactPage() {
           </Card>
         </div>
 
-        <div className="mt-8 grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
-          <div className="space-y-6">
-            <Card className="border-border/60 bg-card/95">
-              <CardHeader>
-                <CardTitle className="font-heading text-2xl">Helpful Links</CardTitle>
-              </CardHeader>
-              <CardContent className="grid gap-3 sm:grid-cols-2">
-                {navLinks.map((link) => (
-                  <Link
-                    key={link.href}
-                    href={link.href}
-                    className="rounded-2xl border border-border/70 px-4 py-3 text-sm font-medium text-foreground transition-colors hover:border-secondary/50 hover:text-secondary"
-                  >
-                    {link.label}
-                  </Link>
-                ))}
-              </CardContent>
-            </Card>
-
-            <Card className="border-border/60 bg-card/95">
-              <CardHeader>
-                <CardTitle className="font-heading text-2xl">Connect Online</CardTitle>
-              </CardHeader>
-              <CardContent className="grid gap-3 sm:grid-cols-3">
-                {socialLinks.map((link) => (
-                  <a
-                    key={link.href}
-                    href={link.href}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="rounded-2xl border border-border/70 px-4 py-3 text-sm font-medium text-foreground transition-colors hover:border-secondary/50 hover:text-secondary"
-                  >
-                    {link.label}
-                  </a>
-                ))}
-              </CardContent>
-            </Card>
-          </div>
-
-          <div className="hidden lg:block" />
-        </div>
       </section>
 
-      <section className="pb-16 md:pb-24">
+      <section className="pt-2 pb-16 md:pb-24">
         <div className="mx-auto w-full max-w-7xl px-4 md:px-8">
           <div className="mb-6 max-w-2xl">
             <p className="text-sm font-semibold uppercase tracking-[0.16em] text-secondary">

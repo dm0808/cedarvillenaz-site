@@ -21,8 +21,20 @@ const leadershipTeam = [
   { slot: "Board Member", name: "Nick Hopkins", title: "Board Member" },
   { slot: "Board Member", name: "Ted Kerns", title: "Board Member" },
   { slot: "Board Member", name: "Rachel Pennington", title: "Board Member" },
-  { slot: "Treasurer / Secretary", name: "Pam Green", title: "Treasurer / Secretary" },
-  { slot: "Sunday School Superintendent", name: "Cheryl Kerns", title: "Sunday School Superintendent" },
+  {
+    slot: "Treasurer / Secretary",
+    name: "Pam Green",
+    title: "Treasurer / Secretary",
+    image: "/images/Staff Board/Pam.PNG",
+    imageClassName: "object-contain object-center p-3",
+  },
+  {
+    slot: "Sunday School Superintendent",
+    name: "Cheryl Kerns",
+    title: "Sunday School Superintendent",
+    image: "/images/Staff Board/Cheryl.jpeg",
+    imageClassName: "object-cover object-[62%_42%] scale-[1.14]",
+  },
 ] as const;
 
 export default function AboutPage() {

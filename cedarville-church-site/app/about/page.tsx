@@ -63,10 +63,10 @@ export default function AboutPage() {
           </div>
         </MotionReveal>
 
-        <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+        <div className="mt-10 grid justify-items-center gap-6 md:grid-cols-2 xl:grid-cols-3">
           {leadershipTeam.map((member, index) => (
             <MotionReveal key={`${member.slot}-${index}`} transition={{ delay: index * 0.05 }}>
-              <Card className="h-full overflow-hidden border-border/60 bg-card/95 shadow-sm">
+              <Card className="h-full w-full max-w-[19rem] overflow-hidden border-border/60 bg-card/95 shadow-sm">
                 {"image" in member ? (
                   <div className={`relative overflow-hidden border-b border-border/60 bg-[linear-gradient(145deg,rgba(14,36,51,0.10),rgba(71,107,69,0.10),rgba(116,132,143,0.16))] ${"imageWrapperClassName" in member ? member.imageWrapperClassName : "aspect-[4/5]"}`}>
                     <Image

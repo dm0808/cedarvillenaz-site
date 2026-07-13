@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo } from "react";
-import { MapContainer, Marker, Popup, TileLayer, useMap } from "react-leaflet";
+import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 import L from "leaflet";
 
 import { churchInfo } from "@/lib/site-data";
@@ -14,14 +14,6 @@ const markerIcon = new L.Icon({
   iconAnchor: [12, 41],
 });
 
-function RemoveLeafletPrefix() {
-  const map = useMap();
-
-  map.attributionControl.setPrefix(false);
-
-  return null;
-}
-
 export function ChurchMap() {
   const center = useMemo(
     () => [churchInfo.coordinates.lat, churchInfo.coordinates.lng] as [number, number],
@@ -30,8 +22,13 @@ export function ChurchMap() {
 
   return (
     <div className="overflow-hidden rounded-3xl border border-border/70">
-      <MapContainer center={center} zoom={14} className="h-[360px] w-full" scrollWheelZoom={false}>
-        <RemoveLeafletPrefix />
+      <MapContainer
+        center={center}
+        zoom={14}
+        className="h-[360px] w-full"
+        scrollWheelZoom={false}
+        attributionControl={false}
+      >
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

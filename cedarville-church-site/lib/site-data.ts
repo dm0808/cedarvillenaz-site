@@ -327,5 +327,15 @@ export const ministryPageCopy: Record<
       "Hands-on service projects for church and community",
       "Mentorship and spiritual leadership encouragement",
     ],
+    galleryTitle: "Men of Faith in Action",
+    galleryDescription:
+      "Photos from Men of Faith service projects, fellowship, and hands-on ministry can be featured here.",
+    galleryImages: [
+      {
+        src: "/images/Men/IMG_5952.JPEG",
+        alt: "Men of Faith serving together during an outdoor church work project",
+        className: "object-cover object-[center_44%] scale-[1.03]",
+      },
+    ],
   },
 };

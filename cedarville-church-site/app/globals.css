@@ -103,24 +103,23 @@ h6,
 
 .church-map-marker-beacon {
   position: relative;
-  width: 22px;
-  height: 22px;
+  width: 30px;
+  height: 30px;
 }
 
 .church-map-marker-core {
   position: absolute;
-  inset: 6px;
+  inset: 8px;
   border-radius: 9999px;
   background: var(--accent);
-  border: 2px solid rgba(14, 36, 51, 0.95);
-  box-shadow: 0 0 0 3px rgba(248, 247, 243, 0.72);
+  box-shadow: 0 0 0 4px rgba(248, 247, 243, 0.78), 0 10px 24px rgba(14, 36, 51, 0.22);
 }
 
 .church-map-marker-ring {
   position: absolute;
   inset: 0;
   border-radius: 9999px;
-  border: 2px solid color-mix(in srgb, var(--secondary) 78%, white 22%);
+  border: 3px solid color-mix(in srgb, var(--secondary) 72%, white 28%);
   opacity: 0;
   animation: church-map-beacon-pulse 2.4s ease-out infinite;
 }
@@ -133,8 +132,8 @@ h6,
   border-radius: 1rem;
   background: rgba(255, 255, 255, 0.96);
   color: var(--foreground);
-  padding: 0.9rem 1.25rem;
-  font-size: 0.95rem;
+  padding: 0.75rem 1.05rem;
+  font-size: 0.9rem;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0;
@@ -142,13 +141,14 @@ h6,
   box-shadow: 0 14px 34px rgba(14, 36, 51, 0.18);
   border: 1px solid rgba(213, 217, 220, 0.9);
   white-space: nowrap;
+  pointer-events: none;
 }
 
 .church-map-tooltip.leaflet-tooltip-top::before {
   border-top-color: rgba(255, 255, 255, 0.96);
-  bottom: -10px;
-  margin-left: -10px;
-  border-width: 10px 10px 0;
+  bottom: -9px;
+  margin-left: -9px;
+  border-width: 9px 9px 0;
   filter: drop-shadow(0 4px 8px rgba(14, 36, 51, 0.08));
 }
 

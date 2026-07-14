@@ -115,8 +115,8 @@ export default function ContactPage() {
             </p>
             <h3 className="mt-2 font-heading text-3xl md:text-4xl">Find Us In Cedarville</h3>
           </div>
+          <ChurchMapClient className="overflow-hidden rounded-3xl border border-border/60 bg-card/95" />
         </div>
-        <ChurchMapClient className="w-full overflow-hidden border-y border-border/60 bg-card/95" />
       </section>
     </>
   );

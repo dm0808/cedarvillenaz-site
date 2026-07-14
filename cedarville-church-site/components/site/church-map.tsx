@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo } from "react";
-import { MapContainer, Marker, Popup, TileLayer, Tooltip } from "react-leaflet";
+import { MapContainer, Marker, TileLayer, Tooltip } from "react-leaflet";
 import L from "leaflet";
 
 import { churchInfo } from "@/lib/site-data";
@@ -15,9 +15,9 @@ const markerIcon = L.divIcon({
       <span class="church-map-marker-ring church-map-marker-ring-two"></span>
     </div>
   `,
-  iconSize: [22, 22],
-  iconAnchor: [11, 11],
-  popupAnchor: [0, -14],
+  iconSize: [30, 30],
+  iconAnchor: [15, 15],
+  popupAnchor: [0, -16],
 });
 
 type ChurchMapProps = {
@@ -27,6 +27,10 @@ type ChurchMapProps = {
 export function ChurchMap({ className }: ChurchMapProps) {
   const center = useMemo(
     () => [churchInfo.coordinates.lat, churchInfo.coordinates.lng] as [number, number],
+    [],
+  );
+  const mapsUrl = useMemo(
+    () => `https://www.google.com/maps/search/?api=1&query=${churchInfo.coordinates.lat},${churchInfo.coordinates.lng}`,
     [],
   );
 
@@ -43,16 +47,22 @@ export function ChurchMap({ className }: ChurchMapProps) {
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
-        <Marker position={center} icon={markerIcon}>
+        <Marker
+          position={center}
+          icon={markerIcon}
+          eventHandlers={{
+            click: () => {
+              window.open(mapsUrl, "_blank", "noopener,noreferrer");
+            },
+          }}
+        >
           <Tooltip
-            permanent
             direction="top"
-            offset={[0, -14]}
+            offset={[0, -18]}
             className="church-map-tooltip"
           >
             {churchInfo.name}
           </Tooltip>
-          <Popup>{churchInfo.name}</Popup>
         </Marker>
       </MapContainer>
     </div>

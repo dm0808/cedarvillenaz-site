@@ -58,8 +58,8 @@ const leadershipTeam = [
     slot: "Sunday School Superintendent",
     name: "Cheryl Kerns",
     title: "Sunday School Superintendent",
-    image: "/images/Staff Board/Cheryl.jpeg",
-    imageClassName: "object-cover object-[50%_28%] scale-[1.01] transition-transform duration-500 group-hover:scale-[1.06]",
+    image: "/images/Staff Board/Cheryl.png",
+    imageClassName: "object-cover object-[50%_24%] scale-[1.08] transition-transform duration-500 group-hover:scale-[1.14]",
     summary:
       "Cheryl supports children and families through Sunday School leadership, helping create spaces where young hearts can grow in faith.",
   },

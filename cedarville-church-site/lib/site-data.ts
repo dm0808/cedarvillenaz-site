@@ -227,22 +227,17 @@ export const ministryPageCopy: Record<
         className: "object-cover object-[center_24%] scale-[1.06]",
       },
       {
-        src: "/images/Children/IMG_2869 (1).JPEG",
+        src: "/images/Children/IMG_2869 (1).jpg",
         alt: "A volunteer and child in the Kids Ministry nursery play area",
         className: "object-cover object-[center_20%] scale-[1.05]",
       },
       {
-        src: "/images/Children/IMG_2873.JPEG",
+        src: "/images/Children/IMG_2873.jpg",
         alt: "A child exploring toys in the Kids Ministry nursery room",
         className: "object-cover object-[center_20%] scale-[1.05]",
       },
       {
-        src: "/images/Children/IMG_2880.JPEG",
-        alt: "Children enjoying an outdoor Kids Ministry activity together",
-        className: "object-cover object-[center_22%] scale-[1.03]",
-      },
-      {
-        src: "/images/Children/IMG_2888.JPEG",
+        src: "/images/Children/IMG_2888.jpg",
         alt: "Kids Ministry fun in front of the painted Bible mural wall",
         className: "object-cover object-[center_48%] scale-[1.02]",
       },

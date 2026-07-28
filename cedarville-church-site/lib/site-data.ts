@@ -318,34 +318,96 @@ export const ministryPageCopy: Record<
       "Photos from worship services, prayer gatherings, fellowship, and sacred moments in the life of our church.",
     galleryImages: [
       {
+        src: "/images/Worship/IMG_0479.jpeg",
+        alt: "Worship, Prayer, and Fellowship gathering photo 1",
+      },
+      {
+        src: "/images/Worship/IMG_1292.jpeg",
+        alt: "Worship, Prayer, and Fellowship gathering photo 2",
+      },
+      {
+        src: "/images/Worship/IMG_1441.jpeg",
+        alt: "Worship, Prayer, and Fellowship gathering photo 3",
+      },
+      {
+        src: "/images/Worship/IMG_2146.jpeg",
+        alt: "Worship, Prayer, and Fellowship gathering photo 4",
+      },
+      {
+        src: "/images/Worship/IMG_2159.jpeg",
+        alt: "Worship, Prayer, and Fellowship gathering photo 5",
+      },
+      {
+        src: "/images/Worship/IMG_2160.jpeg",
+        alt: "Worship, Prayer, and Fellowship gathering photo 6",
+      },
+      {
+        src: "/images/Worship/IMG_2387.jpeg",
+        alt: "Worship, Prayer, and Fellowship gathering photo 7",
+      },
+      {
         src: "/images/Worship/IMG_2400.JPEG",
-        alt: "A prayer moment at the front of the sanctuary during worship",
-        className: "object-cover object-[center_24%] scale-[1.05]",
+        alt: "Worship, Prayer, and Fellowship gathering photo 8",
+      },
+      {
+        src: "/images/Worship/IMG_2402.jpeg",
+        alt: "Worship, Prayer, and Fellowship gathering photo 9",
+      },
+      {
+        src: "/images/Worship/IMG_2409.jpeg",
+        alt: "Worship, Prayer, and Fellowship gathering photo 10",
       },
       {
         src: "/images/Worship/IMG_4151.JPEG",
-        alt: "The congregation gathered in the sanctuary during a worship service",
-        className: "object-cover object-[center_38%] scale-[1.04]",
+        alt: "Worship, Prayer, and Fellowship gathering photo 11",
       },
       {
         src: "/images/Worship/IMG_4153.JPEG",
-        alt: "People seated together in worship beneath the sanctuary stained-glass light",
-        className: "object-cover object-[center_36%] scale-[1.04]",
+        alt: "Worship, Prayer, and Fellowship gathering photo 12",
       },
       {
         src: "/images/Worship/IMG_4155.JPEG",
-        alt: "The church family standing together during a worship and prayer service",
-        className: "object-cover object-[center_34%] scale-[1.04]",
+        alt: "Worship, Prayer, and Fellowship gathering photo 13",
       },
       {
         src: "/images/Worship/IMG_4156.JPG",
-        alt: "Congregation members standing for worship in the sanctuary",
-        className: "object-cover object-[center_34%] scale-[1.04]",
+        alt: "Worship, Prayer, and Fellowship gathering photo 14",
       },
       {
         src: "/images/Worship/IMG_4160.JPEG",
-        alt: "A view of the sanctuary during worship with the church gathered in prayer",
-        className: "object-cover object-[center_34%] scale-[1.04]",
+        alt: "Worship, Prayer, and Fellowship gathering photo 15",
+      },
+      {
+        src: "/images/Worship/IMG_6538.jpeg",
+        alt: "Worship, Prayer, and Fellowship gathering photo 16",
+      },
+      {
+        src: "/images/Worship/IMG_7271.jpeg",
+        alt: "Worship, Prayer, and Fellowship gathering photo 17",
+      },
+      {
+        src: "/images/Worship/IMG_7272.jpeg",
+        alt: "Worship, Prayer, and Fellowship gathering photo 18",
+      },
+      {
+        src: "/images/Worship/IMG_7274.jpeg",
+        alt: "Worship, Prayer, and Fellowship gathering photo 19",
+      },
+      {
+        src: "/images/Worship/IMG_7275.jpeg",
+        alt: "Worship, Prayer, and Fellowship gathering photo 20",
+      },
+      {
+        src: "/images/Worship/IMG_7276.jpeg",
+        alt: "Worship, Prayer, and Fellowship gathering photo 21",
+      },
+      {
+        src: "/images/Worship/IMG_7277.jpeg",
+        alt: "Worship, Prayer, and Fellowship gathering photo 22",
+      },
+      {
+        src: "/images/Worship/IMG_7278.jpeg",
+        alt: "Worship, Prayer, and Fellowship gathering photo 23",
       },
     ],
   },

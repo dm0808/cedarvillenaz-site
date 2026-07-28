@@ -91,7 +91,7 @@ export default function AboutPage() {
         <div className="mt-12 space-y-8">
           {leadershipTeam.map((member, index) => (
             <MotionReveal key={`${member.slot}-${index}`} transition={{ delay: index * 0.05 }}>
-              <Card className="group overflow-hidden border-secondary/35 bg-secondary text-secondary-foreground transition-shadow duration-300 hover:shadow-xl">
+              <Card className="group overflow-hidden border-[#8d9aa3] bg-[#74848f] text-[#f8f7f3] transition-shadow duration-300 hover:shadow-xl">
                 <div className="grid gap-0 md:grid-cols-[minmax(0,18rem)_1fr]">
                   {"image" in member ? (
                     <div className="relative aspect-[4/3] overflow-hidden md:h-full md:min-h-[20rem] md:aspect-auto">
@@ -103,12 +103,12 @@ export default function AboutPage() {
                       />
                     </div>
                   ) : (
-                    <div className="flex aspect-[4/3] items-center justify-center bg-[linear-gradient(145deg,rgba(248,247,243,0.10),rgba(217,164,65,0.16),rgba(14,36,51,0.18))] px-6 text-center md:h-full md:min-h-[20rem] md:aspect-auto">
+                    <div className="flex aspect-[4/3] items-center justify-center bg-[linear-gradient(145deg,rgba(248,247,243,0.12),rgba(217,164,65,0.14),rgba(14,36,51,0.16))] px-6 text-center md:h-full md:min-h-[20rem] md:aspect-auto">
                       <div>
                         <p className="text-xs font-semibold uppercase tracking-[0.18em] text-accent">
                           Photo Space
                         </p>
-                        <p className="mt-2 text-sm text-secondary-foreground/80">
+                        <p className="mt-2 text-sm text-[#f8f7f3]/82">
                           Add a portrait or ministry photo here
                         </p>
                       </div>
@@ -120,10 +120,10 @@ export default function AboutPage() {
                       <p className="text-xs font-semibold uppercase tracking-[0.16em] text-accent">
                         {member.slot}
                       </p>
-                      <CardTitle className="font-heading text-3xl text-secondary-foreground md:text-4xl">{member.name}</CardTitle>
+                      <CardTitle className="font-heading text-3xl text-[#f8f7f3] md:text-4xl">{member.name}</CardTitle>
                     </CardHeader>
                     <CardContent className="md:px-8 md:pb-8">
-                      <CardDescription className="mt-4 max-w-2xl text-base text-secondary-foreground/85">
+                      <CardDescription className="mt-4 max-w-2xl text-base text-[#f8f7f3]/86">
                         {member.summary}
                       </CardDescription>
                     </CardContent>

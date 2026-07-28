@@ -105,7 +105,7 @@ export default function AboutPage() {
                   ) : (
                     <div className="flex aspect-[4/3] items-center justify-center bg-[linear-gradient(145deg,rgba(248,247,243,0.12),rgba(217,164,65,0.14),rgba(14,36,51,0.16))] px-6 text-center md:h-full md:min-h-[20rem] md:aspect-auto">
                       <div>
-                        <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#e6edf0]">
+                        <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#333132]">
                           Photo Space
                         </p>
                         <p className="mt-2 text-sm text-[#f8f7f3]/82">
@@ -117,7 +117,7 @@ export default function AboutPage() {
 
                   <div className="flex flex-col justify-center">
                     <CardHeader className="pb-3 md:px-8 md:pt-8">
-                      <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[#e6edf0]">
+                      <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[#333132]">
                         {member.slot}
                       </p>
                       <CardTitle className="font-heading text-3xl text-[#f8f7f3] md:text-4xl">{member.name}</CardTitle>

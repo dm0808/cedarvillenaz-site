@@ -45,7 +45,7 @@ export default async function MinistryDetailPage({ params }: PageProps) {
 
   return (
     <section className="mx-auto w-full max-w-6xl px-4 py-14 md:px-8 md:py-20">
-      <div className="grid gap-8 lg:grid-cols-2 lg:items-center">
+      <div className="grid gap-8 lg:grid-cols-2 lg:items-start">
         <div className="relative aspect-[4/3] overflow-hidden rounded-3xl border border-border/60">
           <Image
             src={ministry.image}

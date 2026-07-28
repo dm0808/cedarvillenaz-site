@@ -27,7 +27,7 @@ export function Navbar() {
             />
           </span>
           <div>
-            <p className="font-heading text-lg font-semibold leading-none text-secondary">Cedarville Church of the Nazarene</p>
+            <p className="font-heading text-lg font-semibold leading-none text-[#74848f]">Cedarville Church of the Nazarene</p>
           </div>
         </Link>
 

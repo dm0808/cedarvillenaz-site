@@ -123,7 +123,6 @@ export default function AboutPage() {
                       <CardTitle className="font-heading text-3xl md:text-4xl">{member.name}</CardTitle>
                     </CardHeader>
                     <CardContent className="md:px-8 md:pb-8">
-                      <p className="text-base font-medium text-foreground/90">{member.title}</p>
                       <CardDescription className="mt-4 max-w-2xl text-base">
                         {member.summary}
                       </CardDescription>

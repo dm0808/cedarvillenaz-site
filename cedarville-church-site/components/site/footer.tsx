@@ -37,7 +37,7 @@ export function Footer() {
               />
             </span>
           </div>
-          <p className="font-heading text-2xl">Cedarville Church of the Nazarene</p>
+          <p className="font-heading text-2xl text-secondary">Cedarville Church of the Nazarene</p>
           <p className="footer-description mt-3 text-sm">
             A warm and welcoming church family committed to helping people know and
             follow Jesus.

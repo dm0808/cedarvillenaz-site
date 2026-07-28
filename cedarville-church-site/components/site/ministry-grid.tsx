@@ -39,7 +39,13 @@ export function MinistryGrid() {
               transition={{ type: "spring", stiffness: 260, damping: 20 }}
             >
               <Card className="group h-full overflow-hidden border-border/60 transition-shadow duration-300 hover:shadow-xl">
-                <div className="relative aspect-[16/10] overflow-hidden">
+                <div
+                  className={
+                    ministry.slug === "adult-discipleship"
+                      ? "relative aspect-[16/10] overflow-hidden bg-muted/40"
+                      : "relative aspect-[16/10] overflow-hidden"
+                  }
+                >
                   <Image
                     src={ministry.image}
                     alt={ministry.title}
@@ -52,7 +58,7 @@ export function MinistryGrid() {
                         : ministry.slug === "worship-prayer"
                           ? "object-cover object-[center_38%] scale-[1.08] transition-transform duration-500 group-hover:scale-[1.14]"
                         : ministry.slug === "adult-discipleship"
-                          ? "object-cover object-[center_58%] scale-[1.22] transition-transform duration-500 group-hover:scale-[1.28]"
+                          ? "object-contain object-center p-2 transition-transform duration-500 group-hover:scale-[1.03]"
                         : "object-cover transition-transform duration-500 group-hover:scale-105"
                     }
                   />

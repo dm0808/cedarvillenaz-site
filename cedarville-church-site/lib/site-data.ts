@@ -101,9 +101,9 @@ export const ministries = [
   },
   {
     slug: "worship-prayer",
-    title: "Worship & Prayer",
+    title: "Worship, Prayer, & Fellowship",
     description:
-      "Gathering weekly to worship wholeheartedly and seek the Holy Spirit through prayer.",
+      "Gathering weekly to worship, pray, and grow together in Christ-centered fellowship.",
     icon: Music,
     image: "/images/Worship/Worship.jpg",
   },
@@ -307,15 +307,15 @@ export const ministryPageCopy: Record<
   },
   "worship-prayer": {
     summary:
-      "Worship & Prayer is the heartbeat of our church as we gather to glorify God and seek His presence.",
+      "Worship, Prayer, & Fellowship is a place where our church family gathers to glorify God, seek His presence, and deepen relationships with one another.",
     details: [
       "Sunday worship team opportunities",
       "Weekly prayer gatherings",
-      "Special nights of worship throughout the year",
+      "Fellowship throughout the year that strengthens our church family",
     ],
-    galleryTitle: "Worship & Prayer Moments",
+    galleryTitle: "Worship, Prayer, & Fellowship Moments",
     galleryDescription:
-      "Photos from worship services, prayer gatherings, and sacred moments in the life of our church.",
+      "Photos from worship services, prayer gatherings, fellowship, and sacred moments in the life of our church.",
     galleryImages: [
       {
         src: "/images/Worship/IMG_2400.JPEG",

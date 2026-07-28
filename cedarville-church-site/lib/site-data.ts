@@ -258,7 +258,7 @@ export const ministryPageCopy: Record<
     ],
     galleryTitle: "Youth Events",
     galleryDescription:
-      "Photos from youth gatherings, hangouts, and special events",
+      "Photos from youth gatherings, hangouts, and special events.",
     galleryImages: [
       {
         src: "/images/Youth/Youth 1.JPG",

@@ -288,7 +288,7 @@ export const ministryPageCopy: Record<
     ],
     galleryTitle: "Young at Heart Photos",
     galleryDescription:
-      "Photos from Young at Heart gatherings and shared moments can be featured here.",
+      "Photos from Young at Heart gatherings and shared moments.",
     galleryImages: [
       {
         src: "/images/Young at Heart/IMG_6045.jpg",
@@ -359,7 +359,7 @@ export const ministryPageCopy: Record<
     ],
     galleryTitle: "Men of Faith in Action",
     galleryDescription:
-      "Photos from Men of Faith service projects, fellowship, and hands-on ministry can be featured here.",
+      "Photos from Men of Faith service projects, fellowship, and hands-on ministry.",
     galleryImages: [
       {
         src: "/images/Men/IMG_5952.JPEG",

@@ -15,7 +15,7 @@ const leadershipTeam = [
     slot: "Pastor",
     name: "Jesse Aaron",
     title: "Pastor",
-    image: "/images/Staff Board/Jesse wide.png",
+    image: "/images/Staff Board/Jesse_BW.jpg",
     imageClassName: "object-cover object-[50%_18%] transition-transform duration-500 group-hover:scale-105",
     summary:
       "Jesse serves as pastor, helping guide the church through preaching, prayer, discipleship, and pastoral care.",
@@ -24,7 +24,7 @@ const leadershipTeam = [
     slot: "Board Member",
     name: "Nick Hopkins",
     title: "Board Member",
-    image: "/images/Staff Board/Nick.png",
+    image: "/images/Staff Board/Nick_BW.jpg",
     imageClassName: "object-cover object-[50%_24%] scale-[1.03] transition-transform duration-500 group-hover:scale-[1.09]",
     summary:
       "Nick serves on the church board, offering spiritual encouragement and practical leadership in support of the church family.",
@@ -33,7 +33,7 @@ const leadershipTeam = [
     slot: "Board Member",
     name: "Ted Kerns",
     title: "Board Member",
-    image: "/images/Staff Board/Ted.jpeg",
+    image: "/images/Staff Board/Ted_BW.jpg",
     imageClassName: "object-cover object-[50%_22%] scale-[1.06] transition-transform duration-500 group-hover:scale-[1.12]",
     summary:
       "Ted serves on the church board, helping strengthen the mission of the church through wisdom, service, and steady leadership.",
@@ -42,6 +42,8 @@ const leadershipTeam = [
     slot: "Board Member",
     name: "Rachel Pennington",
     title: "Board Member",
+    image: "/images/Staff Board/Rachel_BW.jpg",
+    imageClassName: "object-cover object-[50%_24%] scale-[1.03] transition-transform duration-500 group-hover:scale-[1.09]",
     summary:
       "Rachel serves on the church board, supporting the ministry of the church with care, counsel, and a heart for the congregation.",
   },
@@ -49,7 +51,7 @@ const leadershipTeam = [
     slot: "Treasurer / Secretary",
     name: "Pam Green",
     title: "Treasurer / Secretary",
-    image: "/images/Staff Board/Pam.PNG",
+    image: "/images/Staff Board/Pam_BW.jpg",
     imageClassName: "object-cover object-[50%_22%] transition-transform duration-500 group-hover:scale-105",
     summary:
       "Pam serves as treasurer and secretary, helping steward the administrative and financial life of the church with faithfulness.",
@@ -58,7 +60,7 @@ const leadershipTeam = [
     slot: "Sunday School Superintendent",
     name: "Cheryl Kerns",
     title: "Sunday School Superintendent",
-    image: "/images/Staff Board/Cheryl.png",
+    image: "/images/Staff Board/Cheryl_BW.jpg",
     imageClassName: "object-cover object-[50%_24%] scale-[1.08] transition-transform duration-500 group-hover:scale-[1.14]",
     summary:
       "Cheryl supports children and families through Sunday School leadership, helping create spaces where young hearts can grow in faith.",

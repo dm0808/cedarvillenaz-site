@@ -105,7 +105,7 @@ export const ministries = [
     description:
       "Gathering weekly to worship wholeheartedly and seek the Holy Spirit through prayer.",
     icon: Music,
-    image: "/images/Worship.jpg",
+    image: "/images/Worship/Worship.jpg",
   },
   {
     slug: "men-on-mission",

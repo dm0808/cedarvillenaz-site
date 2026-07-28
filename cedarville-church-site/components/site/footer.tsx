@@ -27,13 +27,13 @@ export function Footer() {
       <div className="mx-auto grid w-full max-w-7xl gap-10 md:grid-cols-4">
         <div>
           <div className="mb-4 inline-flex items-center gap-3">
-            <span className="relative block h-10 w-10 shrink-0">
+            <span className="relative block h-10 w-12 shrink-0">
               <Image
-                src="/icons/logoIcon.png"
+                src="/images/logo.png"
                 alt="Cedarville Church logo symbol"
                 fill
-                className="object-contain"
-                sizes="40px"
+                className="object-contain brightness-0 invert"
+                sizes="48px"
               />
             </span>
           </div>

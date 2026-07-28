@@ -16,13 +16,13 @@ export function Navbar() {
     <header className="sticky top-0 z-50 border-b border-white/15 bg-[#333132] text-white backdrop-blur dark:border-white/10 dark:bg-[#333132] dark:text-white">
       <div className="mx-auto flex w-full max-w-7xl items-center justify-between px-4 py-3 md:px-8">
         <Link href="/" className="flex items-center gap-2">
-          <span className="relative block h-12 w-12 shrink-0">
+          <span className="relative block h-12 w-14 shrink-0">
             <Image
-              src="/icons/logoIcon.png"
+              src="/images/logo.png"
               alt="Cedarville Church logo symbol"
               fill
-              className="object-contain"
-              sizes="48px"
+              className="object-contain brightness-0 invert"
+              sizes="56px"
               priority
             />
           </span>

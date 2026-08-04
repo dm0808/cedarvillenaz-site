@@ -10,28 +10,52 @@ import { churchInfo } from "@/lib/site-data";
 
 export function ContactForm() {
   const [submitNotice, setSubmitNotice] = useState<string | null>(null);
+  const [submitError, setSubmitError] = useState<string | null>(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  function handleSubmit(event: FormEvent<HTMLFormElement>) {
+  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
 
-    const formData = new FormData(event.currentTarget);
+    const form = event.currentTarget;
+    const formData = new FormData(form);
     const name = String(formData.get("name") ?? "").trim();
     const email = String(formData.get("email") ?? "").trim();
     const subject = String(formData.get("subject") ?? "").trim();
     const message = String(formData.get("message") ?? "").trim();
 
-    const mailSubject = subject || `Message from ${name || "website visitor"}`;
-    const mailBody = [
-      name ? `Name: ${name}` : null,
-      email ? `Email: ${email}` : null,
-      "",
-      message,
-    ]
-      .filter(Boolean)
-      .join("\n");
+    setIsSubmitting(true);
+    setSubmitNotice(null);
+    setSubmitError(null);
 
-    window.location.href = `mailto:${churchInfo.email}?subject=${encodeURIComponent(mailSubject)}&body=${encodeURIComponent(mailBody)}`;
-    setSubmitNotice(`Your email app should open a message addressed to ${churchInfo.email}.`);
+    formData.set("_subject", subject || `Message from ${name || "website visitor"}`);
+    formData.set("_replyto", email);
+    formData.set("_captcha", "false");
+    formData.set("_template", "table");
+
+    if (message) {
+      formData.set("message", message);
+    }
+
+    try {
+      const response = await fetch(`https://formsubmit.co/ajax/${churchInfo.email}`, {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+        },
+        body: formData,
+      });
+
+      if (!response.ok) {
+        throw new Error("Form submission failed");
+      }
+
+      setSubmitNotice("Thank you for reaching out to us. We will get back to you as soon as we can.");
+      form.reset();
+    } catch {
+      setSubmitError("We could not send your message right now. Please try again in a few minutes.");
+    } finally {
+      setIsSubmitting(false);
+    }
   }
 
   return (
@@ -63,12 +87,17 @@ export function ContactForm() {
           className="min-h-[260px]"
         />
       </div>
-      <Button type="submit" size="lg">
-        Send
+      <Button type="submit" size="lg" disabled={isSubmitting}>
+        {isSubmitting ? "Sending..." : "Send"}
       </Button>
       {submitNotice ? (
         <p className="text-sm text-secondary">
           {submitNotice}
+        </p>
+      ) : null}
+      {submitError ? (
+        <p className="text-sm text-destructive">
+          {submitError}
         </p>
       ) : null}
     </form>

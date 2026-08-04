@@ -14,7 +14,7 @@ export const churchInfo = {
   shortName: "Cedarville Church of the Nazarene",
   addressLine1: "125 S Main St",
   addressLine2: "Cedarville, Ohio 45314",
-  phone: "(540) 940-7449",
+  phone: "937-766-1250",
   email: "info@cedarvillenaz.org",
   sundaySchool: "9:30 AM",
   sundayWorship: "10:30 AM",

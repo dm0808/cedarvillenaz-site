@@ -294,6 +294,26 @@ export const ministryPageCopy: Record<
         src: "/images/Young at Heart/IMG_6045.jpg",
         alt: "Young at Heart group gathering together around a table",
       },
+      {
+        src: "/images/Young at Heart/Youngatheart1.jpeg",
+        alt: "Young at Heart members enjoying time together during a church gathering",
+      },
+      {
+        src: "/images/Young at Heart/Youngatheart2.jpeg",
+        alt: "Young at Heart group sharing fellowship during an event",
+      },
+      {
+        src: "/images/Young at Heart/Youngatheart3.jpeg",
+        alt: "Young at Heart friends gathered together indoors",
+      },
+      {
+        src: "/images/Young at Heart/Youngatheart4.jpeg",
+        alt: "Young at Heart attendees spending time together in fellowship",
+      },
+      {
+        src: "/images/Young at Heart/Youngatheart5.jpeg",
+        alt: "Young at Heart group photo from a shared gathering",
+      },
     ],
   },
   "missions-outreach": {

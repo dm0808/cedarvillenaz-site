@@ -36,7 +36,7 @@ export default function Home() {
     <>
       {showBonfireBanner ? (
         <section className="bg-[#b91c1c] px-4 py-3 text-center text-sm font-semibold tracking-[0.04em] text-white md:text-base">
-          Tonight&apos;s Church Bonfire is Canceled due to inclement weather
+          Tonight&apos;s Church Bonfire is canceled due to inclement weather
         </section>
       ) : null}
       <Hero />

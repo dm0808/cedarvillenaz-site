@@ -16,6 +16,9 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
+      <section className="bg-[color:var(--color-destructive)] px-4 py-3 text-center text-sm font-semibold tracking-[0.08em] text-white md:text-base">
+        Tonight Church Bonfire is CANCELED due to inclement weather
+      </section>
       <Hero />
       <QuickInfoCards />
       <WelcomeSection />

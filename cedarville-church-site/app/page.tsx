@@ -5,7 +5,9 @@ import { EventsSection } from "@/components/site/events-section";
 import { Hero } from "@/components/site/hero";
 import { MinistryGrid } from "@/components/site/ministry-grid";
 import { QuickInfoCards } from "@/components/site/quick-info-cards";
+import { TemporarySiteBanner } from "@/components/site/temporary-site-banner";
 import { WelcomeSection } from "@/components/site/welcome-section";
+import { homePageTemporaryBanner } from "@/lib/site-data";
 
 export const revalidate = 60;
 
@@ -18,6 +20,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
+      <TemporarySiteBanner banner={homePageTemporaryBanner} />
       <Hero />
       <QuickInfoCards />
       <WelcomeSection />

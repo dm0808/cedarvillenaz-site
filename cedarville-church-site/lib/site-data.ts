@@ -24,6 +24,14 @@ export const churchInfo = {
   },
 };
 
+export type TemporaryBanner = {
+  message: string;
+  lastVisibleDate: `${number}-${number}-${number}`;
+  className?: string;
+};
+
+export const homePageTemporaryBanner: TemporaryBanner | null = null;
+
 export const navLinks = [
   { label: "Home", href: "/" },
   { label: "What We Believe", href: "/beliefs" },

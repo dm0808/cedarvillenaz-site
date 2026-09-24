@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 
 import { BeliefsPreview } from "@/components/site/beliefs-preview";
 import { EventsSection } from "@/components/site/events-section";
@@ -23,6 +24,17 @@ export default function Home() {
       <TemporarySiteBanner banner={homePageTemporaryBanner} />
       <Hero />
       <QuickInfoCards />
+      <section className="mx-auto w-full max-w-7xl px-4 py-4 md:px-8 md:py-6">
+        <div className="relative aspect-[16/9] overflow-hidden rounded-3xl">
+          <Image
+            src="/images/WorshipService.png"
+            alt="Worship service at Cedarville Church of the Nazarene"
+            fill
+            className="object-cover"
+            priority
+          />
+        </div>
+      </section>
       <WelcomeSection />
       <MinistryGrid />
       <BeliefsPreview />

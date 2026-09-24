@@ -25,7 +25,7 @@ export default function Home() {
       <Hero />
       <QuickInfoCards />
       <section className="mx-auto w-full max-w-7xl px-4 py-4 md:px-8 md:py-6">
-        <div className="relative aspect-[16/9] overflow-hidden rounded-3xl">
+        <div className="relative aspect-[16/10] overflow-hidden rounded-3xl">
           <Image
             src="/images/WorshipService.png"
             alt="Worship service at Cedarville Church of the Nazarene"
